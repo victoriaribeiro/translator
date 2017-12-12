@@ -16,12 +16,17 @@ var total = 0;
 var rawdata = fs.readFileSync(filename);
 var data = JSON.parse(rawdata);
 
+var client = new MsTranslator({
+    api_key: key
+}, true);
+
+
 for (i in data) {
     if (data[i].lang == fromLang) {
         for (j in data[i].entries) {
             total += data[i].entries[j].value.length;
             toTranslate.push(data[i].entries[j].value);
-
+        
             //console.log(data[i].entries[j].value);
         }
     }
@@ -30,9 +35,6 @@ for (i in data) {
 }
 console.log(total);
 
-var client = new MsTranslator({
-    api_key: key
-}, true);
 
 var params = {
     texts: toTranslate,
