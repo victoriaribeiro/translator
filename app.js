@@ -36,7 +36,7 @@ for (i in data) {
     }
         //console.log(data[i].entries);
 }
-console.log(total);
+//console.log(total);
  
 var client = new MsTranslator({
     api_key: key
