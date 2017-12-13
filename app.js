@@ -1,5 +1,6 @@
-if (process.argv.length < 3) {
-    console.log('node' + process.argv[1] + 'filename');
+
+if (process.argv.length < 5) {
+    console.log('node ' + process.argv[1] + ' filename fromLang toLang');
     process.exit(1);
 }
  
@@ -8,8 +9,16 @@ var MsTranslator = require('mstranslator');
 var key = 'a56ac805d4664a66b5b8313b0329d6be';
 var filename = process.argv[2];
 var toTranslate = [];
-var fromLang = 'en';
-var toLang = 'de';
+var fromLang = process.argv[3];
+var toLang = [];
+
+if(process.argv.length > 5){
+    for(i=4;i<process.argv.length;i++){
+        toLang.push(process.argv[i]);
+    }
+}
+console.log(toLang);
+
 var total = 0;
  
  
@@ -39,13 +48,13 @@ var params = {
     to: toLang,
 }
  
-  
+
 client.translateArray(params, function (err, response) {
     if (err) throw err;
  
     fs.writeFileSync('/home/victoria/response.json', JSON.stringify(response));
  
-    for (i in response) {
-        console.log(response[i].TranslatedText);
-    }
+    // for (i in response) {
+    //     console.log(response[i].TranslatedText);
+    // }
 });
