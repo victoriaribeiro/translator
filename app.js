@@ -54,7 +54,7 @@ client.translateArray(params, function (err, response) {
  
     fs.writeFileSync('/home/victoria/response.json', JSON.stringify(response));
  
-    // for (i in response) {
-    //     console.log(response[i].TranslatedText);
-    // }
+    for (i in response) {
+        console.log(response[i].TranslatedText);
+    }
 });
