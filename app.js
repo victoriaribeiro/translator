@@ -77,6 +77,7 @@ fs.appendFileSync('/home/victoria/entries.json', JSON.stringify(data));
 entries = 0;
 for (k = 0; k < toLangs.length; k++) {
     total = 0;
+    entries  = 0;
     params.to = toLangs[k];
     console.log(params.to)
     for (i = 0; i < data.length; i++) {
