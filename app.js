@@ -1,5 +1,5 @@
 if (process.argv.length < 5) {
-  console.log('node'+ process.argv[1]+'filename fromLang toLang');  
+  // console.log(`node${  process.argv[1]  }filename fromLang toLang`);
   process.exit(1);
 }
 
@@ -48,7 +48,7 @@ toLangs.forEach((lang) => {
   });
 
   client.translateArray(translation, (err, result) => {
-    console.log(err); 
-    console.log(result); 
+    console.log(err);
+    console.log(result);
   });
 });
