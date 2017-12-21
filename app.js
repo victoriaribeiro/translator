@@ -3,7 +3,6 @@ if (process.argv.length < 5) {
     process.exit(1);
 }
 
-// var fs = require('fs');
 var MsTranslator = require('mstranslator');
 var key = 'a56ac805d4664a66b5b8313b0329d6be';
 var filename = process.argv[2];
