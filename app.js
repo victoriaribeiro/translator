@@ -3,7 +3,7 @@ if (process.argv.length < 5) {
     process.exit(1);
 }
 
-var fs = require('fs');
+// var fs = require('fs');
 var MsTranslator = require('mstranslator');
 var key = 'a56ac805d4664a66b5b8313b0329d6be';
 var filename = process.argv[2];
@@ -20,6 +20,8 @@ var params = {
     from: fromLang,
     to: '',
 }
+const fileData = require(filename);
+
 
 if (process.argv.length >= 5) {
     for (i = 4; i < process.argv.length; i++) {
@@ -27,13 +29,11 @@ if (process.argv.length >= 5) {
     }
 }
 
-var rawdata = fs.readFileSync(filename);
-var data = JSON.parse(rawdata);
 
-for (i = 0; i < data.length; i++) {
-    if (data[i].lang == fromLang) {
-        for (j in data[i].entries) {
-            toTranslate.push(data[i].entries[j].value);
+for (i = 0; i < fileData.length; i++) {
+    if (fileData[i].lang == fromLang) {
+        for (j in fileData[i].entries) {
+            toTranslate.push(fileData[i].entries[j].value);
         }
     }
 }
