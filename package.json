@@ -9,8 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^4.13.1",
     "express": "^4.16.2",
     "mongoose": "^4.13.7",
     "mstranslator": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   }
 }
