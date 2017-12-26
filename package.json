@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bson-ext": "^1.0.5",
     "eslint": "^4.13.1",
     "express": "^4.16.2",
+    "mongodb": "^3.0.1",
     "mstranslator": "^3.0.0"
   },
   "devDependencies": {
