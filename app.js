@@ -68,7 +68,6 @@ mongoClient.connect(url, (err, db) => {
             doc.entries[i].value = response.TranslatedText;
             i++;
           });
-          //console.log(doc.componentN)
 
           collection.updateOne({
             "lang": doc.lang,
