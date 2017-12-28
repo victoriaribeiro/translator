@@ -11,10 +11,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}/app.js",
             "args": [
-                "/home/victoria/translationsSample.json",
-                "en",
-                "pt",
-                "de"
+                "es",
+                "fr"
             ]
         }
     ]

@@ -32,15 +32,19 @@ mongoClient.connect(url, (err, db) => {
   if (err) throw err;
   let dbase = db.db('translator');
 
+
   dbase.createCollection('translations', (err, collection) => {
     if (err) throw err;
-
+    
     collection.find({
-      "lang": "en"
-    }).forEach((doc) => {
+      "lang": fromLang
+      }).forEach((doc) => {
       let toTranslate = []
+
+      console.log(doc.componentN)
       doc.entries.forEach((entries) => {
         toTranslate.push(entries.value)
+        //console.log(entries.value)
       });
 
       let originalLang = fromLang;
@@ -52,18 +56,19 @@ mongoClient.connect(url, (err, db) => {
         }, {
           from: params.from,
         });
-        //debugger;
 
         doc.lang = lang;
 
         client.translateArray(translation, function (err, result) {
 
           if (err) throw err
-          i = 0;
+          let i = 0;
+
           result.forEach((response) => {
             doc.entries[i].value = response.TranslatedText;
             i++;
           });
+          //console.log(doc.componentN)
 
           collection.updateOne({
             "lang": doc.lang,
@@ -78,10 +83,10 @@ mongoClient.connect(url, (err, db) => {
           }, {
             upsert: true
           });
-          // debugger;
+
         });
       });
     });
   });
-  // debugger;
+
 });
