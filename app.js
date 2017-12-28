@@ -11,6 +11,8 @@ const key = 'a56ac805d4664a66b5b8313b0329d6be';
 const toTranslate = [];
 const fromLang = process.argv[2];
 const toLangs = [];
+const async = require('async')
+
 
 const client = new MsTranslator({
   api_key: key,
@@ -44,7 +46,6 @@ mongoClient.connect(url, (err, db) => {
       console.log(doc.componentN)
       doc.entries.forEach((entries) => {
         toTranslate.push(entries.value)
-        //console.log(entries.value)
       });
 
       let originalLang = fromLang;
@@ -86,6 +87,7 @@ mongoClient.connect(url, (err, db) => {
         });
       });
     });
+
   });
 
 });
