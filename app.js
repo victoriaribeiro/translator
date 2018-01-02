@@ -38,19 +38,19 @@ mongoClient.connect(url, (err, db) => {
   dbase.createCollection('translations', (err, collection) => {
     if (err) throw err;
 
-    collection.find({
-      "lang": fromLang
-    }).sort({componentN:1}).toArray((err, docs) => {
-      async.each(docs, (doc, callback) => {
-        let toTranslate = []
+    async.each(toLangs, function (lang, callback2) {
 
-        doc.entries.forEach((entries) => {
-          toTranslate.push(entries.value)
-        });
+      collection.find({
+        "lang": fromLang
+      }).sort({
+        componentN: 1
+      }).toArray((err, docs) => {
+        async.each(docs, (doc, callback) => {
+          let toTranslate = []
 
-        let originalLang = fromLang;
-
-        async.each(toLangs, function (lang, callback2) {
+          doc.entries.forEach((entries) => {
+            toTranslate.push(entries.value)
+          });
 
           const translation = Object.assign({
             to: lang,
@@ -58,19 +58,17 @@ mongoClient.connect(url, (err, db) => {
           }, {
             from: params.from,
           });
-          //debugger
+
           doc.lang = lang;
-          debugger;
-          
+
           client.translateArray(translation, function (err, result) {
             if (err) throw err
-            console.log(result)
             let i = 0;
+            console.log(result)
             result.forEach((response) => {
               doc.entries[i].value = response.TranslatedText;
               i++;
             });
-            debugger;
             collection.updateOne({
               "lang": doc.lang,
               "componentN": doc.componentN,
@@ -85,27 +83,22 @@ mongoClient.connect(url, (err, db) => {
             }, {
               upsert: true
             }, (err, r) => {
-              if (err) callback2(err)
-              console.log('salvo')
-              callback2(null)
-            });
-
+              if (err) throw err
+              console.log('salvo');
+              callback(null)
+            });           
+          }, (err) => {
+            if (err) throw err;
+            //callback(null);
           });
         }, (err) => {
-          if (err) throw 'err'
-          callback(null)
-        })
-
-
-      }, (err) => {
-        if (err) throw err;
-        console.log('fim')
-        db.close()
+          if (err) throw err;
+          callback2(null);
+        });
       });
-
-
+    },(err)=>{
+      console.log('fim')
+      db.close();
     });
-
   });
-
 });
