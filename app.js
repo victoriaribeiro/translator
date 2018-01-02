@@ -1,5 +1,5 @@
 if (process.argv.length < 4) {
-  console.log("node "+  process.argv[1]+ " fromLang toLang");
+  console.log("node " + process.argv[1] + " fromLang toLang");
   process.exit(1);
 }
 
@@ -37,56 +37,116 @@ mongoClient.connect(url, (err, db) => {
 
   dbase.createCollection('translations', (err, collection) => {
     if (err) throw err;
-    
+
     collection.find({
       "lang": fromLang
-      }).forEach((doc) => {
-      let toTranslate = []
+    }).toArray((err, docs) => {
+      async.each(docs, (doc, callback) => {
+        let toTranslate = []
 
-      console.log(doc.componentN)
-      doc.entries.forEach((entries) => {
-        toTranslate.push(entries.value)
-      });
-
-      let originalLang = fromLang;
-
-      toLangs.forEach((lang) => {
-        const translation = Object.assign({
-          to: lang,
-          texts: toTranslate
-        }, {
-          from: params.from,
+        doc.entries.forEach((entries) => {
+          toTranslate.push(entries.value)
         });
 
-        doc.lang = lang;
+        let originalLang = fromLang;
 
-        client.translateArray(translation, function (err, result) {
+        async.each(toLangs, function (lang, callback2) {
 
-          if (err) throw err
-          let i = 0;
-
-          result.forEach((response) => {
-            doc.entries[i].value = response.TranslatedText;
-            i++;
+          const translation = Object.assign({
+            to: lang,
+            texts: toTranslate
+          }, {
+            from: params.from,
           });
 
-          collection.updateOne({
-            "lang": doc.lang,
-            "componentN": doc.componentN
-          }, {
-            $set: {
+          doc.lang = lang;
+          console.log(doc.componentN)
+          console.log(translation.texts)
+          
+          client.translateArray(translation, function (err, result) {
+            if (err) throw err
+
+            let i = 0;
+            debugger
+            // console.log(result);
+            // console.log(doc.componentN)
+            result.forEach((response) => {
+              doc.entries[i].value = response.TranslatedText;
+              i++;
+            });
+
+            collection.updateOne({
               "lang": doc.lang,
-              "componentN": doc.componentN,
-              "toolN": doc.toolN,
-              "entries": doc.entries
-            }
-          }, {
-            upsert: true
-          });
+              "componentN": doc.componentN
+            }, {
+              $set: {
+                "lang": doc.lang,
+                "componentN": doc.componentN,
+                "toolN": doc.toolN,
+                "entries": doc.entries
+              }
+            }, {
+              upsert: true
+            }, (err) => {
+              if (err) callback2(err)
+              callback2(null)
+            });
 
-        });
+          });
+        }, (err) => {
+          if (err) throw 'err'
+          console.log('teste')
+          callback(null)
+        })
+
+
+      }, (err) => {
+        if (err) throw err;
+
+        console.log('fim');
+        db.close()
       });
+
+
     });
+
+    // // toLangs.forEach((lang) => {
+    //   const translation = Object.assign({
+    //     to: lang,
+    //     texts: toTranslate
+    //   }, {
+    //     from: params.from,
+    //   });
+
+    //   doc.lang = lang;
+
+    //   client.translateArray(translation, function (err, result) {
+
+    //     if (err) throw err
+    //     let i = 0;
+
+    //     result.forEach((response) => {
+    //       doc.entries[i].value = response.TranslatedText;
+    //       i++;
+    //     });
+
+    //     collection.updateOne({
+    //       "lang": doc.lang,
+    //       "componentN": doc.componentN
+    //     }, {
+    //       $set: {
+    //         "lang": doc.lang,
+    //         "componentN": doc.componentN,
+    //         "toolN": doc.toolN,
+    //         "entries": doc.entries
+    //       }
+    //     }, {
+    //       upsert: true
+    //     });
+
+    //   });
+    // });
+
 
   });
 

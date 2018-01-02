@@ -11,8 +11,8 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}/app.js",
             "args": [
-                "es",
-                "fr"
+                "pt",
+                "es"
             ]
         }
     ]
