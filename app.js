@@ -64,7 +64,7 @@ mongoClient.connect(url, (err, db) => {
           client.translateArray(translation, function (err, result) {
             if (err) throw err
             let i = 0;
-            console.log(result)
+            //console.log(result)
             result.forEach((response) => {
               doc.entries[i].value = response.TranslatedText;
               i++;
@@ -84,12 +84,11 @@ mongoClient.connect(url, (err, db) => {
               upsert: true
             }, (err, r) => {
               if (err) throw err
-              console.log('salvo');
+              //console.log('salvo');
               callback(null)
             });           
           }, (err) => {
             if (err) throw err;
-            //callback(null);
           });
         }, (err) => {
           if (err) throw err;
@@ -97,7 +96,7 @@ mongoClient.connect(url, (err, db) => {
         });
       });
     },(err)=>{
-      console.log('fim')
+      //console.log('fim')
       db.close();
     });
   });
