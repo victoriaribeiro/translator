@@ -28,71 +28,71 @@ if (process.argv.length >= 4) {
   }
 }
 
-
 mongoClient.connect(url, (err, db) => {
   if (err) throw err;
-  const dbase = db.db('translator');
+  const collection = db.db('translator').collection('translations');
 
-  dbase.createCollection('translations', (err, collection) => {
-    if (err) throw err;
+  collection.find({
+    lang: fromLang,
+  }).sort({
+    componentN: 1,
+  }).toArray((err, docs) => {
+    async.each(toLangs, (lang, callback2) => {
+      if (err) throw err;
 
-      async.each(toLangs, (lang, callback2) => {
-        collection.find({
-          lang: fromLang,
-        }).sort({
-          componentN: 1,
-        }).toArray((err, docs) => {
-          async.each(docs, (doc, callback) => {
-            const toTranslate = [];
-            doc.entries.forEach((entries) => {
-              toTranslate.push(entries.value);
-            });
+      async.each(docs, (doc, callback) => {
+        if (err) throw err;
 
-            const translation = Object.assign({
-              to: lang,
-              texts: toTranslate,
-            }, {
-              from: params.from,
-            });
-            doc.lang = lang;
+        var toTranslate = [];
+        doc.entries.forEach((entries) => {
+          toTranslate.push(entries.value);
+        });
 
-            client.translateArray(translation, (err, result) => {
-              if (err) throw err;
+        const translation = Object.assign({
+          to: lang,
+          texts: toTranslate,
+        }, {
+          from: params.from,
+        });
+        
+        doc.lang = lang;
 
-              let i = 0;
+        client.translateArray(translation, (err, result) => {
+          if (err) throw err;
 
-              result.forEach((response) => {
-                doc.entries[i].value = response.TranslatedText;
-                i += 1;
-              });
+          let i = 0;
 
-              collection.updateOne({
-                lang: doc.lang,
-                componentN: doc.componentN,
-                toolN: doc.toolN,
-              }, {
-                $set: {
-                  lang: doc.lang,
-                  componentN: doc.componentN,
-                  toolN: doc.toolN,
-                  entries: doc.entries,
-                },
-              }, {
-                upsert: true,
-              }, (err) => {
-                if (err) throw err;
-                callback(null);
-              });
-            });
+          result.forEach((response) => {
+            doc.entries[i].value = response.TranslatedText;
+            i += 1;
+          });
+
+          collection.updateOne({
+            lang: doc.lang,
+            componentN: doc.componentN,
+            toolN: doc.toolN,
+          }, {
+            $set: {
+              lang: doc.lang,
+              componentN: doc.componentN,
+              toolN: doc.toolN,
+              entries: doc.entries,
+            },
+          }, {
+            upsert: true,
           }, (err) => {
             if (err) throw err;
-            callback2(null);
+            callback(null);
           });
         });
       }, (err) => {
         if (err) throw err;
-        db.close();
-        console.log('Tempo ' + (Date.now() - start) / 1000 + ' segundos');
+        callback2(null);
       });
+    }, (err) => {
+      if (err) throw err;
+      db.close();
+      console.log('Tempo ' + (Date.now() - start) / 1000 + ' segundos');
+    });
   });
 });
