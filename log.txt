@@ -1,5 +1,0 @@
-[ { From: 'pt',
-    OriginalTextSentenceLengths: [ 35, 52, 45 ],
-    TranslatedText: 'Cette étape est associé à une action. Si la suppression, ce tutoriel peut être endommagé. Êtes-vous sûr de que vouloir supprimer cette étape ?',
-    TranslatedTextSentenceLengths: [ 38, 52, 52 ] } ]
-There was an error deserializing the object of type System.String[]. Encountered invalid character '	'.
