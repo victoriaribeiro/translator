@@ -37,62 +37,67 @@ mongoClient.connect(url, (err, db) => {
   }).sort({
     componentN: 1,
   }).toArray((err, docs) => {
-    async.each(toLangs, (lang, callback2) => {
+    toLangs.sort();
+
+
+    async.each(docs, (doc, callback1) => {
       if (err) throw err;
-
-      async.each(docs, (doc, callback1) => {
-        if (err) throw err;
-
-        var toTranslate = [];
-        doc.entries.forEach((entries) => {
-          toTranslate.push(entries.value);
-        });
-
-        const translation = Object.assign({
-          to: lang,
-          texts: toTranslate,
+      async.each(docs.entries, (texts, callback2) => {
+        debugger;
+        collection.find({
+          componentN: 'quickEditFeedbackDelete',
+          'entries.id': 'title',
+          'entries.value': {
+            $exists: true
+          }
         }, {
-          from: params.from,
+          lang: true,
+          _id: false
+        }).sort({
+          lang: 1
+        }).toArray((err, result) => {
+          console.log(result)
+          callback2();
         });
-        
-        doc.lang = lang;
 
-        client.translateArray(translation, (err, result) => {
-          if (err) throw err;
 
-          let i = 0;
 
-          result.forEach((response) => {
-            doc.entries[i].value = response.TranslatedText;
-            i += 1;
-          });
 
-          collection.updateOne({  
-            lang: doc.lang,
-            componentN: doc.componentN,
-            toolN: doc.toolN,
-          }, {
-            $set: {
-              lang: doc.lang,
-              componentN: doc.componentN, 
-              toolN: doc.toolN,
-              entries: doc.entries,
-            },
-          }, {
-            upsert: true,
-          }, (err) => {
-            if (err) throw err;
-            callback1(null);
-          });
-        });
-      }, (err) => {
-        if (err) throw err;
-        callback2(null);
-      });
+      }, (err, ));
+
+
+      // client.translateArray(translation, (err, result) => {
+      //   if (err) throw err;
+
+      //   let i = 0;
+
+      //   result.forEach((response) => {
+      //     doc.entries[i].value = response.TranslatedText;
+      //     i += 1;
+      //   });
+
+      //   collection.updateOne({
+      //     lang: doc.lang,
+      //     componentN: doc.componentN,
+      //     toolN: doc.toolN,
+      //   }, {
+      //     $set: {
+      //       lang: doc.lang,
+      //       componentN: doc.componentN,
+      //       toolN: doc.toolN,
+      //       entries: doc.entries,
+      //     },
+      //   }, {
+      //     upsert: true,
+      //   }, (err) => {
+      //     if (err) throw err;
+      //     callback1(null);
+      //   });
+      // });
     }, (err) => {
       if (err) throw err;
-      db.close();
-      console.log('Tempo ' + (Date.now() - start) / 1000 + ' segundos');
+      callback2(null);
     });
+
   });
 });
