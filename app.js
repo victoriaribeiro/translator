@@ -67,14 +67,14 @@ mongoClient.connect(url, (err, db) => {
             i += 1;
           });
 
-          collection.updateOne({
+          collection.updateOne({  
             lang: doc.lang,
             componentN: doc.componentN,
             toolN: doc.toolN,
           }, {
             $set: {
               lang: doc.lang,
-              componentN: doc.componentN,
+              componentN: doc.componentN, 
               toolN: doc.toolN,
               entries: doc.entries,
             },
