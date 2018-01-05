@@ -28,6 +28,45 @@ if (process.argv.length >= 4) {
   }
 }
 
+function searchDif(doc, collection, text, callback2) {
+  let projection = {
+    lang: true,
+    _id: false
+  };
+  // debugger;
+  collection.find({
+    componentN: doc.componentN,
+    'entries.id': text.id,
+    'entries.value': {
+      $exists: true
+    }
+  }).project(projection).sort({
+    lang: 1
+  }).toArray((err, result) => {
+    debugger
+    let found = []
+
+    result.forEach(element => {
+      found.push(element.lang);
+    });
+
+    let dif = toLangs.filter(x => !found.includes(x));
+
+    async.each(dif, updateEntry.bind(null, doc, text, collection), (err) => {
+      if (err) throw err;
+    })
+
+
+    callback2();
+  });
+}
+
+function updateEntry(doc, text, collection, toLang, callback3) {
+  
+
+
+}
+
 mongoClient.connect(url, (err, db) => {
   if (err) throw err;
   const collection = db.db('translator').collection('translations');
@@ -41,62 +80,19 @@ mongoClient.connect(url, (err, db) => {
 
 
     async.each(docs, (doc, callback1) => {
-      if (err) throw err;
-      async.each(docs.entries, (texts, callback2) => {
-        debugger;
-        collection.find({
-          componentN: 'quickEditFeedbackDelete',
-          'entries.id': 'title',
-          'entries.value': {
-            $exists: true
-          }
-        }, {
-          lang: true,
-          _id: false
-        }).sort({
-          lang: 1
-        }).toArray((err, result) => {
-          console.log(result)
-          callback2();
-        });
+      async.each(doc.entries, searchDif.bind(null, doc, collection), (err) => {
+        if (err) throw err;
+        callback1();
+      });
 
 
-
-
-      }, (err, ));
-
-
-      // client.translateArray(translation, (err, result) => {
-      //   if (err) throw err;
-
-      //   let i = 0;
-
-      //   result.forEach((response) => {
-      //     doc.entries[i].value = response.TranslatedText;
-      //     i += 1;
-      //   });
-
-      //   collection.updateOne({
-      //     lang: doc.lang,
-      //     componentN: doc.componentN,
-      //     toolN: doc.toolN,
-      //   }, {
-      //     $set: {
-      //       lang: doc.lang,
-      //       componentN: doc.componentN,
-      //       toolN: doc.toolN,
-      //       entries: doc.entries,
-      //     },
-      //   }, {
-      //     upsert: true,
-      //   }, (err) => {
-      //     if (err) throw err;
-      //     callback1(null);
-      //   });
-      // });
     }, (err) => {
       if (err) throw err;
-      callback2(null);
+      db.close();
+
+
+    }, (err) => {
+      if (err) throw err;
     });
 
   });
