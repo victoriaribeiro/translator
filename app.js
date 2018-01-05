@@ -40,7 +40,7 @@ mongoClient.connect(url, (err, db) => {
     async.each(toLangs, (lang, callback2) => {
       if (err) throw err;
 
-      async.each(docs, (doc, callback) => {
+      async.each(docs, (doc, callback1) => {
         if (err) throw err;
 
         var toTranslate = [];
@@ -82,7 +82,7 @@ mongoClient.connect(url, (err, db) => {
             upsert: true,
           }, (err) => {
             if (err) throw err;
-            callback(null);
+            callback1(null);
           });
         });
       }, (err) => {
