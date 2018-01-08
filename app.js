@@ -28,44 +28,74 @@ if (process.argv.length >= 4) {
   }
 }
 
-function searchDif(doc, collection, text, callback2) {
-  let projection = {
-    lang: true,
-    _id: false
-  };
-  // debugger;
-  collection.find({
-    componentN: doc.componentN,
-    'entries.id': text.id,
-    'entries.value': {
-      $exists: true
-    }
-  }).project(projection).sort({
-    lang: 1
-  }).toArray((err, result) => {
-    debugger
-    let found = []
+// function searchDif(doc, collection, text, callback2) {
+//   const projection = {
+//     lang: true,
+//     _id: false
+//   };
 
-    result.forEach(element => {
-      found.push(element.lang);
-    });
+//   collection.find({
+//     componentN: doc.componentN,
+//     toolN: doc.toolN,
+//     'entries.id': text.id,
+//     'entries.value': {
+//       $exists: true
+//     }
+//   }).project(projection).sort({
+//     lang: 1
+//   }).toArray((err, result) => {
 
-    let dif = toLangs.filter(x => !found.includes(x));
+//     let found = []
 
-    async.each(dif, updateEntry.bind(null, doc, text, collection), (err) => {
-      if (err) throw err;
-    })
+//     result.forEach(element => {
+//       found.push(element.lang);
+//     });
+//     let dif = toLangs.filter(x => !found.includes(x));
+//     if (dif.length > 0) {
+//       async.each(dif, updateEntry.bind(null, doc, text, collection), (err) => {
+//         if (err) throw err;
+//         callback2();
+//       })
+//     }
+//   });
+// }
 
+// function updateEntry(doc, text, collection, toLang, callback3) {
+//   const translation = Object.assign({
+//     to: toLang,
+//     text: text.value
+//   }, {
+//     from: fromLang,
+//   });
 
-    callback2();
-  });
-}
+//   client.translate(translation, (err, translatedText) => {
+//     if (err) throw err;
 
-function updateEntry(doc, text, collection, toLang, callback3) {
-  
+//     collection.updateOne({
+//       componentN: doc.componentN,
+//       toolN: doc.toolN,
+//       lang: toLang
+//     }, {
+//       $push: {
+//         entries: {
+//           id: text.id,
+//           value: translatedText
+//         }
+//       },
+//       $setOnInsert: {
+//         lang: toLang,
+//         componentN: doc.componentN,
+//         toolN: doc.toolN,
+//       }
+//     }, {
+//       upsert: true,
+//     }, (err) => {
+//       if (err) throw err;
+//       callback3(null);
+//     });
 
-
-}
+//   });
+// }
 
 mongoClient.connect(url, (err, db) => {
   if (err) throw err;
@@ -80,19 +110,84 @@ mongoClient.connect(url, (err, db) => {
 
 
     async.each(docs, (doc, callback1) => {
-      async.each(doc.entries, searchDif.bind(null, doc, collection), (err) => {
+      async.each(doc.entries, (text, callback2) => {
+        const projection = {
+          lang: true,
+          _id: false
+        };
+
+        collection.find({
+          componentN: doc.componentN,
+          toolN: doc.toolN,
+          'entries.id': text.id,
+          'entries.value': {
+            $exists: true
+          }
+        }).project(projection).sort({
+          lang: 1
+        }).toArray((err, result) => {
+
+          let found = []
+
+          result.forEach(element => {
+            found.push(element.lang);
+          });
+          let dif = toLangs.filter(x => !found.includes(x));
+
+          if (dif.length > 0) {
+            debugger;
+            async.each(dif, (toLang, callback3) => {
+              const translation = Object.assign({
+                to: toLang,
+                text: text.value
+              }, {
+                from: fromLang,
+              });
+              debugger;
+              client.translate(translation, (err, translatedText) => {
+                if (err) throw err;
+
+                collection.updateOne({
+                  componentN: doc.componentN,
+                  toolN: doc.toolN,
+                  lang: toLang
+                }, {
+                  $push: {
+                    entries: {
+                      id: text.id,
+                      value: translatedText
+                    }
+                  },
+                  $setOnInsert: {
+                    lang: toLang,
+                    componentN: doc.componentN,
+                    toolN: doc.toolN,
+                  }
+                }, {
+                  upsert: true,
+                }, (err) => {
+                  if (err) throw err;
+                  callback3(null);
+                });
+
+              });
+            }, (err) => {
+              if (err) throw err;
+              callback2();
+            });
+          }
+          else{
+            callback2();
+          }
+
+        });
+      }, (err) => {
         if (err) throw err;
         callback1();
       });
-
-
     }, (err) => {
       if (err) throw err;
       db.close();
-
-
-    }, (err) => {
-      if (err) throw err;
     });
 
   });
