@@ -1,72 +1,21 @@
-if (process.argv.length < 4) {
-  console.log('node ' + process.argv[1] + ' fromLang toLang');
-  process.exit(1);
-}
-const start = Date.now();
+
 const MsTranslator = require('mstranslator');
 const mongoClient = require('mongodb').MongoClient;
 const async = require('async');
 
 const url = 'mongodb://localhost:27017';
 const key = '14fe39b28b79421b847f527e319db16e';
-const fromLang = process.argv[2];
-const toLangs = [];
+const fromLang = 'pt';
+let toLangs = [];
 
 const client = new MsTranslator({
   api_key: key,
 }, true);
 
-const params = {
-  texts: '',
-  from: fromLang,
-  to: '',
-};
-
-if (process.argv.length >= 4) {
-  for (let i = 3; i < process.argv.length; i += 1) {
-    toLangs.push(process.argv[i]);
-  }
-}
-
-function searchDif(doc, collection, text, callback2) {
-  const projection = {
-    lang: true,
-    _id: false
-  };
-
-  collection.find({
-    componentN: doc.componentN,
-    toolN: doc.toolN,
-    'entries.id': text.id,
-    'entries.value': {
-      $exists: true
-    }
-  }).project(projection).sort({
-    lang: 1
-  }).toArray((err, result) => {
-
-    let found = []
-
-    result.forEach(element => {
-      found.push(element.lang);
-    });
-    let dif = toLangs.filter(x => !found.includes(x));
-    if (dif.length > 0) {
-      debugger;
-      async.each(dif, updateEntry.bind(null, doc, text, collection), (err) => {
-        if (err) throw err;
-        callback2();
-      })
-    } else {
-      callback2();
-    }
-  });
-}
-
-function updateEntry(doc, text, collection, toLang, callback3) {
+function updateEntry(doc, text, translationsCollection, toLang, callback3) {
   const translation = Object.assign({
     to: toLang,
-    text: text.value
+    text: text.value,
   }, {
     from: fromLang,
   });
@@ -74,22 +23,22 @@ function updateEntry(doc, text, collection, toLang, callback3) {
   client.translate(translation, (err, translatedText) => {
     if (err) throw err;
 
-    collection.updateOne({
+    translationsCollection.updateOne({
       componentN: doc.componentN,
       toolN: doc.toolN,
-      lang: toLang
+      lang: toLang,
     }, {
       $push: {
         entries: {
           id: text.id,
-          value: translatedText
-        }
+          value: translatedText,
+        },
       },
       $setOnInsert: {
         lang: toLang,
         componentN: doc.componentN,
         toolN: doc.toolN,
-      }
+      },
     }, {
       upsert: true,
     }, (err) => {
@@ -99,11 +48,51 @@ function updateEntry(doc, text, collection, toLang, callback3) {
   });
 }
 
+
+function searchDif(doc, translationsCollection, text, callback2) {
+  const projection = {
+    lang: true,
+    _id: false,
+  };
+
+  translationsCollection.find({
+    componentN: doc.componentN,
+    toolN: doc.toolN,
+    'entries.id': text.id,
+    'entries.value': {
+      $exists: true,
+    },
+  }).sort({
+    lang: 1,
+  }).toArray((err, result) => {
+    const found = [];
+    result.forEach((element) => {
+      found.push(element.lang);
+    });
+    const dif = toLangs.filter(x => !found.includes(x));
+    if (dif.length > 0) {
+      async.each(dif, updateEntry.bind(null, doc, text, translationsCollection), (err) => {
+        if (err) throw err;
+        callback2();
+      });
+    } else {
+      callback2();
+    }
+  });
+}
+
 mongoClient.connect(url, (err, db) => {
   if (err) throw err;
-  const collection = db.db('translator').collection('translations');
+  const translationsCollection = db.db('translator').collection('translations');
+  const settingsCollection = db.db('translator').collection('settings');
 
-  collection.find({
+  settingsCollection.find({
+    name: 'Helppier',
+  }).toArray((err, result) => {
+    toLangs = result[0].lang;
+  });
+
+  translationsCollection.find({
     lang: fromLang,
   }).sort({
     componentN: 1,
@@ -111,7 +100,7 @@ mongoClient.connect(url, (err, db) => {
     toLangs.sort();
 
     async.each(docs, (doc, callback1) => {
-      async.each(doc.entries, searchDif.bind(null, doc, collection), (err) => {
+      async.each(doc.entries, searchDif.bind(null, doc, translationsCollection), (err) => {
         if (err) throw err;
         callback1();
       });
@@ -119,6 +108,5 @@ mongoClient.connect(url, (err, db) => {
       if (err) throw err;
       db.close();
     });
-
   });
 });
