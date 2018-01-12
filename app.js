@@ -50,11 +50,6 @@ function updateEntry(doc, text, translationsCollection, toLang, callback3) {
 
 
 function searchDif(doc, translationsCollection, text, callback2) {
-  const projection = {
-    lang: true,
-    _id: false,
-  };
-
   translationsCollection.find({
     componentN: doc.componentN,
     toolN: doc.toolN,
