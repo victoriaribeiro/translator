@@ -13,7 +13,7 @@ const client = new MsTranslator({
 }, true);
 
 let index = 0;
-let arrToTranslate = new Array();
+let arrToTranslate = [];
 let toLangs = [];
 let charCount = 0;
 
@@ -65,7 +65,7 @@ function translateAndUpdate(toLang, translationsCollection, toTranslate, callbac
     });
   });
   // clean arrToTranslate and index
-  arrToTranslate = new Array();
+  arrToTranslate = [];
   index = 0;
 }
 
