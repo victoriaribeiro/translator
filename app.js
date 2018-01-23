@@ -4,75 +4,107 @@ const mongoClient = require('mongodb').MongoClient;
 const async = require('async');
 
 const url = 'mongodb://localhost:27017';
-const key = '14fe39b28b79421b847f527e319db16e';
+const key = '9c257e4bf93e4daf956f49f4719f98ff';
 const fromLang = 'pt';
-let toLangs = [];
 
+const regex = new RegExp("\<t class\=\'notranslate\'\>.*\<\/t\>");
 const client = new MsTranslator({
   api_key: key,
 }, true);
 
-function updateEntry(doc, text, translationsCollection, toLang, callback3) {
+let index = 0;
+let arrToTranslate = new Array();
+let toLangs = [];
+let charCount = 0;
+
+
+function translateAndUpdate(toLang, translationsCollection, toTranslate, callback3) {
   const translation = Object.assign({
     to: toLang,
-    text: text.value,
+    texts: toTranslate,
+    options: '{"ContentType":"text/html"}',
   }, {
     from: fromLang,
   });
 
-  client.translate(translation, (err, translatedText) => {
+  client.translateArray(translation, (err, data) => {
     if (err) throw err;
 
-    translationsCollection.updateOne({
-      componentN: doc.componentN,
-      toolN: doc.toolN,
-      lang: toLang,
-    }, {
-      $push: {
-        entries: {
-          id: text.id,
-          value: translatedText,
-        },
-      },
-      $setOnInsert: {
+    // update each translated entry
+    async.each(data, (response, callback4) => {
+      const translatePrevention = (response.TranslatedText).match(regex)[0];
+      const str = translatePrevention.replace("\<t class\=\'notranslate\'\>", '').replace('</t>', '');
+      const keys = str.split('_');
+      const textValue = response.TranslatedText.split('/t>')[1];
+
+      translationsCollection.updateOne({
+        componentN: keys[0],
+        toolN: keys[1],
         lang: toLang,
-        componentN: doc.componentN,
-        toolN: doc.toolN,
-      },
-    }, {
-      upsert: true,
+      }, {
+        $push: {
+          entries: {
+            id: keys[2],
+            value: textValue,
+          },
+        },
+        $setOnInsert: {
+          lang: toLang,
+          componentN: keys[0],
+          toolN: keys[1],
+        },
+      }, {
+        upsert: true,
+      }, (err) => {
+        if (err) throw err;
+        callback4(null);
+      });
     }, (err) => {
       if (err) throw err;
-      callback3(null);
+      callback3();
     });
   });
+  // clean arrToTranslate and index
+  arrToTranslate = new Array();
+  index = 0;
 }
 
-
-function searchDif(doc, translationsCollection, text, callback2) {
+function searchDif(lang, doc, translationsCollection, text, callback2) {
+  // check if entry exists in the database
   translationsCollection.find({
     componentN: doc.componentN,
     toolN: doc.toolN,
+    lang: lang,
     'entries.id': text.id,
     'entries.value': {
       $exists: true,
     },
-  }).sort({
-    lang: 1,
   }).toArray((err, result) => {
-    const found = [];
-    result.forEach((element) => {
-      found.push(element.lang);
-    });
-    const dif = toLangs.filter(x => !found.includes(x));
-    if (dif.length > 0) {
-      async.each(dif, updateEntry.bind(null, doc, text, translationsCollection), (err) => {
-        if (err) throw err;
-        callback2();
-      });
-    } else {
-      callback2();
+    // if it is not in the DB, it is added to be translated
+    if (result.length == 0) {
+      const textValue =
+        "<t class='notranslate'>" +
+        doc.componentN +
+        "_" +
+        doc.toolN +
+        "_" +
+        text.id +
+        "</t>" +
+        text.value;
+
+      if (arrToTranslate.length == 0) { // if it is the first entry in arrToTranslate
+        arrToTranslate.push(new Array(textValue));
+        charCount = textValue.length;
+      } else if (((charCount + textValue.length) >= 10000) || ((arrToTranslate[index].length) >= 2000)) {
+        arrToTranslate.push(new Array(textValue));
+        charCount = textValue.length;
+        index += 1;
+      } else {
+        arrToTranslate[index].push(textValue);
+        charCount += textValue.length;
+      }
     }
+    callback2();
   });
 }
 
@@ -81,23 +113,40 @@ mongoClient.connect(url, (err, db) => {
   const translationsCollection = db.db('translator').collection('translations');
   const settingsCollection = db.db('translator').collection('settings');
 
+  // get all available languages for Helppier UI
   settingsCollection.find({
     name: 'Helppier',
   }).toArray((err, result) => {
     toLangs = result[0].lang;
   });
 
+  // get all documents where lang == fromLang (default: PT)
   translationsCollection.find({
     lang: fromLang,
   }).sort({
     componentN: 1,
   }).toArray((err, docs) => {
-    toLangs.sort();
-
-    async.each(docs, (doc, callback1) => {
-      async.each(doc.entries, searchDif.bind(null, doc, translationsCollection), (err) => {
+    // for each lang that Helppier should be available
+    async.eachSeries(toLangs, (lang, callback) => {
+      // for each document 
+      async.each(docs, (doc, callback1) => {
+        // iterate over each entry in a doc e execute searchDif for all of them
+        async.each(doc.entries, searchDif.bind(null, lang, doc, translationsCollection), (err) => {
+          if (err) throw err;
+          callback1();
+        });
+      }, (err) => {
         if (err) throw err;
-        callback1();
+        // check if there is anything to translate
+        if (arrToTranslate.length != 0) {
+          // call translateAndUpdate for each array in arrToTranslate
+          async.each(arrToTranslate, translateAndUpdate.bind(null, lang, translationsCollection), (err) => {
+            if (err) throw err;
+            callback(err);
+          });
+        } else {
+          callback();
+        }
       });
     }, (err) => {
       if (err) throw err;
