@@ -1,0 +1,4104 @@
+[{
+        "_id": "22wouewkscwuaA6Db",
+        "lang": "en",
+        "componentN": "quickEditFeedbackDelete",
+        "toolN": "client",
+        "entries": [{
+                "id": "title",
+                "value": "Uh-oh."
+            },
+            {
+                "id": "message",
+                "value": "The step you’re trying to delete is the only step of the guide. You should delete the guide in the guide settings."
+            }
+        ]
+    },
+    {
+        "_id": "2SMoewaaRsFmMQYmM",
+        "lang": "en",
+        "componentN": "moreSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "More Settings"
+            },
+            {
+                "id": "message",
+                "value": "You are able to set your guides for different types of visitors and customize the dimensions or values of any set conditions."
+            }
+        ]
+    },
+    {
+        "_id": "2gmJr2cEwcsudLyr3",
+        "lang": "pt",
+        "componentN": "innerLoading",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "loadingLabel",
+            "value": "A Carregar..."
+        }]
+    }, {
+        "_id": "2ieoPZpb7kz44kxmQ",
+        "lang": "pt",
+        "componentN": "editStepClickButton",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "click",
+                "value": "Clicar"
+            },
+            {
+                "id": "mouseOver",
+                "value": "MouseOver"
+            }
+        ]
+    }, {
+        "_id": "33KYrRpTFkxqehD95",
+        "lang": "pt",
+        "componentN": "stepListSegmentation",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Chave e Valor"
+            },
+            {
+                "id": "segmentationKey",
+                "value": "Chave"
+            },
+            {
+                "id": "segmentationKeyValue",
+                "value": "Valor"
+            },
+            {
+                "id": "segmentationInput",
+                "value": "Adicionar Segmentação"
+            },
+            {
+                "id": "segmentationTitle",
+                "value": "Mostre guias diferentes para diferentes tipos de visitantes, personalizando as dimensões ou os valores de todas as condições estabelecidas."
+            }
+        ]
+    }, {
+        "_id": "3Nn95dS3vodJ6N3xB",
+        "lang": "en",
+        "componentN": "loadingGuideErrorFeedback",
+        "toolN": "client",
+        "entries": [{
+                "id": "title",
+                "value": "Ooops!"
+            },
+            {
+                "id": "textBody",
+                "value": "Sorry, something went wrong and this guide couldn't load correctly."
+            },
+            {
+                "id": "footer",
+                "value": "Please try to play it again."
+            }
+        ]
+    }, {
+        "_id": "3Skx8nbeE4aEdTWAJ",
+        "lang": "pt",
+        "componentN": "editStepMiddleAction",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Selecione as ações"
+            },
+            {
+                "id": "actionAttach",
+                "value": "Nenhuma"
+            },
+            {
+                "id": "actionPopup",
+                "value": "Pop-Up"
+            },
+            {
+                "id": "actionClick",
+                "value": "Clicar"
+            },
+            {
+                "id": "actionMouseOver",
+                "value": "MouseOver"
+            },
+            {
+                "id": "editActionTitle",
+                "value": "Escolha a sua ação. Pode escolher que ação o tutorial irá realizar em cada passo."
+            },
+            {
+                "id": "noneActionTitle",
+                "value": "A bubble será afixada ao elemento que escolher no ecra. Use esta ação para criar uma visita guiada passo por passo a uma página web."
+            },
+            {
+                "id": "popUpActionTitle",
+                "value": "Afixe um passo ao centro do ecrã. Integre novos utilizadores ou dê informação generica sobre o seu negócio."
+            },
+            {
+                "id": "clickActionTitle",
+                "value": "Usada para selecionar um elemento e redirecionar os utilizadores para uma outra página. A ajuda continuará na página que redirecionar."
+            },
+            {
+                "id": "mouseOverActionTitle",
+                "value": "Afixe um passo do tutorial num menu ou elemento que nem sempre esteja visivel no ecrã."
+            },
+            {
+                "id": "actionGenericMessage",
+                "value": "Pressione o botão acima para ativar a ação"
+            },
+            {
+                "id": "actionNextMessage",
+                "value": "Tutorial continua para o próximo passo"
+            }
+        ]
+    }, {
+        "_id": "3ew7vSmnZGTMgs8wc",
+        "lang": "de",
+        "componentN": "editStepMiddleLayout",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "label",
+                "value": "Layout auswählen"
+            },
+            {
+                "id": "iconTitle",
+                "value": "Titel"
+            },
+            {
+                "id": "iconTitleDesc",
+                "value": "Titel + Text"
+            },
+            {
+                "id": "iconDesc",
+                "value": "Text"
+            },
+            {
+                "id": "iconImageDesc",
+                "value": "Medien + Text"
+            },
+            {
+                "id": "iconImage",
+                "value": "Medien"
+            },
+            {
+                "id": "iconTitle",
+                "value": "Titel"
+            },
+            {
+                "id": "iconCustom",
+                "value": "personalisierte HTML"
+            }
+        ]
+    }, {
+        "_id": "3oq5tmEQpdeQPCreD",
+        "lang": "en",
+        "componentN": "tutorialEdit",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "tutorialSettings",
+                "value": "Guide Settings"
+            },
+            {
+                "id": "generalSettings",
+                "value": "General Settings"
+            },
+            {
+                "id": "devicesSettings",
+                "value": "Device Settings"
+            },
+            {
+                "id": "interationSettings",
+                "value": "Interaction Settings"
+            },
+            {
+                "id": "pagesSettings",
+                "value": "Pages Settings"
+            },
+            {
+                "id": "moreSettings",
+                "value": "More Settings"
+            }
+        ]
+    }, {
+        "_id": "46mxr3kfC8gjXBqqM",
+        "lang": "en",
+        "componentN": "generalSettingsBottomContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "keywords",
+                "value": "Keywords"
+            },
+            {
+                "id": "inputPlaceholder",
+                "value": "Content, Pages, Publish"
+            },
+            {
+                "id": "keywordsTitle",
+                "value": "(Optional) You can add keywords or tags to group guides."
+            }
+        ]
+    }, {
+        "_id": "4PXNtq5Arysa4sySb",
+        "lang": "pt",
+        "componentN": "quickEditFeedbackDelete",
+        "toolN": "client",
+        "entries": [{
+                "id": "title",
+                "value": "Uh-oh."
+            },
+            {
+                "id": "message",
+                "value": "O passo que está a tentar eliminar é o único passo do guia. Deve excluir o guia nas configurações do guia."
+            }
+        ]
+    }, {
+        "_id": "4RQHJPPCAEzTFjLZN",
+        "lang": "pt",
+        "toolN": "FeedbackError",
+        "componentN": "feedbackError",
+        "entries": [{
+                "id": "emailPassword",
+                "value": "Introduza o seu e-mail e palavra-passe!"
+            },
+            {
+                "id": "email",
+                "value": "Introduza o seu e-mail!"
+            },
+            {
+                "id": "password",
+                "value": "Introduza a sua palavra-passe!"
+            },
+            {
+                "id": "recording",
+                "value": "Tem que inserir o nome do guia!"
+            },
+            {
+                "id": "emotePanel",
+                "value": "A sua mensagem so pode conter texto alfanumérico!"
+            },
+            {
+                "id": "segmentation",
+                "value": "Actualize a sua subscrição para usar segmentação!"
+            }
+        ]
+    }, {
+        "_id": "4aDCTcTiYXGmrQyh5",
+        "lang": "pt",
+        "componentN": "inLoveFeedback",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "title",
+                "value": "Como podemos servi-lo melhor?"
+            },
+            {
+                "id": "placeholder",
+                "value": "Indique-nos a sua ideia"
+            }
+        ]
+    }, {
+        "_id": "4jaX8e2gWoKZwv7uv",
+        "lang": "en",
+        "componentN": "selectRecordHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "You’re now recording."
+            },
+            {
+                "id": "message",
+                "value": "Click on the element you want to attach a help and there you go! A bubble will be attached to the chosen element and you can add support content for your users."
+            }
+        ]
+    }, {
+        "_id": "5EzLCK2CKLywLNcZ3",
+        "lang": "de",
+        "componentN": "optionalPrevious",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "optionalPreviousLabel",
+                "value": "Tour Einstellungen wählen"
+            },
+            {
+                "id": "optionalPreviousBtn",
+                "value": "Zurück-Taste"
+            },
+            {
+                "id": "optionalPreviousTitle",
+                "value": "Aktivieren oder deaktivieren Sie die 'Vorherige Schaltfläche', damit Benutzer in jedem Schritt Ihres Guides vor- und zurückgehen können"
+            },
+            {
+                "id": "jumptoLabel",
+                "value": "Springen zu"
+            },
+            {
+                "id": "skipableLabel",
+                "value": "Auto-Überspringen-Schritt"
+            }
+        ]
+    }, {
+        "_id": "6M5Kci2dmZ8YnwKbf",
+        "lang": "es",
+        "componentN": "loadingGuideFeedback",
+        "toolN": "client",
+        "entries": [{
+            "id": "loading",
+            "value": "cargando..."
+        }]
+    }, {
+        "_id": "6Q7ngr5sFQY7uvtKM",
+        "lang": "pt",
+        "componentN": "failBehaviors",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "recordingPlayDefaultMsgTitle",
+                "value": "Ups!"
+            },
+            {
+                "id": "recordingPlayDefaultMsgBody",
+                "value": "A opção definida quando um guia não consegue iniciar não permite pré-visualizar este guia enquanto o grava."
+            },
+            {
+                "id": "recordingPlayDefaultMsgFooter",
+                "value": "Tente reproduzi-lo na lista de guias."
+            }
+        ]
+    }, {
+        "_id": "6k5J6ainwz5pPc6nn",
+        "lang": "pt",
+        "componentN": "quickEditFeedbackAction",
+        "toolN": "client",
+        "entries": [{
+            "id": "message",
+            "value": "Este passo tem associado uma ação. Se o eliminar, este tutorial pode ficar danificado. Tem certeza de que deseja excluir este passo?"
+        }]
+    }, {
+        "_id": "6odXjGnaBGSJmpTQg",
+        "lang": "pt",
+        "componentN": "onHide",
+        "toolN": "recording",
+        "entries": [{
+                "id": "name",
+                "value": "Ao ocultar"
+            },
+            {
+                "id": "title",
+                "value": "Esta opção encaminha o utilizador para o próximo passo do guia quando o elemento selecionado desaparecer. O botão PRÓXIMO nunca aparecerá neste passo enquanto que o botão ANTERIOR não aparecerá no passo seguinte."
+            }
+        ]
+    }, {
+        "_id": "6zsf6DL9gPEHXQTzH",
+        "lang": "es",
+        "componentN": "loadingGuideErrorFeedback",
+        "toolN": "client",
+        "entries": [{
+                "id": "title",
+                "value": "Ooops!"
+            },
+            {
+                "id": "textBody",
+                "value": "Se ha producido un error y esta guía no se ha cargado correctamente."
+            },
+            {
+                "id": "footer",
+                "value": "Por favor, intente reproducirlo de nuevo."
+            }
+        ]
+    }, {
+        "_id": "7b4D4Ghe9xRMGQW8N",
+        "lang": "pt",
+        "componentN": "newGuideHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Vamos começar!"
+            },
+            {
+                "id": "message",
+                "value": "Clique aqui para criar o seu primeiro guia e começar a mudar a vida dos seus utilizadores.."
+            }
+        ]
+    }, {
+        "_id": "8Tjm8md39TSTj3v4n",
+        "lang": "pt",
+        "componentN": "selectRecordHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Agora está a gravar!"
+            },
+            {
+                "id": "message",
+                "value": "Clique no elemento que pretende associar uma ajuda e voilà! A bubble será agregada ao elemento escolhido e poderá adicionar conteúdo de suporte para os seus utilizadores."
+            }
+        ]
+    }, {
+        "_id": "8iKbjxEK8j4eoXntB",
+        "lang": "en",
+        "componentN": "stepIndexButtons",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "next",
+                "value": "Next"
+            },
+            {
+                "id": "previous",
+                "value": "Previous"
+            }
+        ]
+    }, {
+        "_id": "9iqCmvmHW5dDFXrpH",
+        "lang": "pt",
+        "componentN": "tutorialListNewTutorial",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "newGuide",
+            "value": "Novo Guia"
+        }]
+    }, {
+        "_id": "9mXBpBHbF8JGapjWv",
+        "lang": "pt",
+        "componentN": "stepEditBottomLabel",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "edit",
+                "value": "Editar"
+            },
+            {
+                "id": "layout",
+                "value": "Esquema"
+            },
+            {
+                "id": "actions",
+                "value": "Ações"
+            },
+            {
+                "id": "advancedSettings",
+                "value": "Definições Avançadas"
+            }
+        ]
+    }, {
+        "_id": "AYRTeTwC73J6bboTf",
+        "lang": "en",
+        "componentN": "integrationSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Interactions Settings"
+            },
+            {
+                "id": "message",
+                "value": "Here you can enable or disable the Overlay Screen (this feature turns the background black and highlights only one step) and the feedback form."
+            }
+        ]
+    }, {
+        "_id": "AhM556dgr7PMFMgFB",
+        "lang": "en",
+        "componentN": "courseProgram",
+        "toolN": "training",
+        "entries": [{
+                "id": "newModule",
+                "value": "New Module"
+            },
+            {
+                "id": "editModule",
+                "value": "Edit Module"
+            },
+            {
+                "id": "moduleName",
+                "value": "Module Name"
+            },
+            {
+                "id": "createModule",
+                "value": "Create Module"
+            },
+            {
+                "id": "addContent",
+                "value": "Add Content"
+            },
+            {
+                "id": "selectContent",
+                "value": "Select Content"
+            },
+            {
+                "id": "changeContentType",
+                "value": "Change Content Type"
+            },
+            {
+                "id": "selectGuide",
+                "value": "Select a Guide"
+            },
+            {
+                "id": "saveContent",
+                "value": "Save Content"
+            }
+        ]
+    }, {
+        "_id": "AmkAvuEtbMDCKLTvZ",
+        "lang": "de",
+        "componentN": "moreOptionsTopContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "segmentationLabel",
+                "value": "Segmentierung"
+            },
+            {
+                "id": "autoPlayLabel",
+                "value": "AutoPlay"
+            }
+        ]
+    }, {
+        "_id": "BKLPoguc7Yp5E5o3h",
+        "lang": "en",
+        "componentN": "neutralFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Information outdated"
+            },
+            {
+                "id": "second",
+                "value": "Needs more information"
+            },
+            {
+                "id": "third",
+                "value": "Contained misspells"
+            }
+        ]
+    }, {
+        "_id": "BMxN8Q9tCRx7NZrn6",
+        "lang": "de",
+        "componentN": "login",
+        "toolN": "login",
+        "entries": [{
+                "id": "emailPlaceholder",
+                "value": "Email Adresse"
+            },
+            {
+                "id": "passwordPlaceholder",
+                "value": "Passwort"
+            },
+            {
+                "id": "loginBtn",
+                "value": "Anmelden"
+            },
+            {
+                "id": "logoutBtn",
+                "value": "Abmelden"
+            }
+        ]
+    }, {
+        "_id": "BpHZ4DK7t2m5AXgzv",
+        "lang": "en",
+        "componentN": "login",
+        "toolN": "login",
+        "entries": [{
+                "id": "emailPlaceholder",
+                "value": "Email Address"
+            },
+            {
+                "id": "passwordPlaceholder",
+                "value": "Password"
+            },
+            {
+                "id": "loginBtn",
+                "value": "Login"
+            },
+            {
+                "id": "logoutBtn",
+                "value": "Logout"
+            }
+        ]
+    }, {
+        "_id": "Bx9hvC2DSQmNQ7jJt",
+        "lang": "en",
+        "componentN": "generalSettingsTopContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "guideName",
+                "value": "Name"
+            },
+            {
+                "id": "description",
+                "value": "Description"
+            },
+            {
+                "id": "tutorialNameInput",
+                "value": "Content Managment"
+            },
+            {
+                "id": "descriptionInput",
+                "value": "Is a set of processes and technologies that supports the collection, managing and publishing information in any form or medium."
+            },
+            {
+                "id": "guideNameTitle",
+                "value": "Name your guide here."
+            },
+            {
+                "id": "descriptionTitle",
+                "value": "Write a brief description that defines the guide’s content."
+            }
+        ]
+    }, {
+        "_id": "C4LWoZuCs9oL7BBmH",
+        "lang": "en",
+        "componentN": "failBehaviorsNewMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "nameLabel",
+                "value": "Message Name"
+            },
+            {
+                "id": "nameInfo",
+                "value": "Enter the name of the message which is displayed in the Error Messages List."
+            },
+            {
+                "id": "titleLabel",
+                "value": "Message Title"
+            },
+            {
+                "id": "titleInfo",
+                "value": "Enter a title of the error message."
+            },
+            {
+                "id": "bodyLabel",
+                "value": "Description"
+            },
+            {
+                "id": "bodyInfo",
+                "value": "Insert a informative description of the error message."
+            },
+            {
+                "id": "footerLabel",
+                "value": "Footer"
+            },
+            {
+                "id": "footerInfo",
+                "value": "(Optional) Add a footer message that appears on the end of the box message."
+            },
+            {
+                "id": "saveBtn",
+                "value": "Save"
+            },
+            {
+                "id": "saveBtnTitle",
+                "value": "Save new message"
+            }
+        ]
+    }, {
+        "_id": "C8dsF8KQfkLHcMQQ8",
+        "lang": "pt",
+        "componentN": "welcomeHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Seja bem-vindo! Eu sou o Helppier"
+            },
+            {
+                "id": "message",
+                "value": "Obrigado por me instalar. Irei juntar-me a si nesta viagem incrível! Juntos iremos melhorar o processo de onboarding e a experiência do utilizador."
+            }
+        ]
+    }, {
+        "_id": "CAFwEZrDe2y4S9sv3",
+        "lang": "en",
+        "componentN": "tutorialListNewTutorial",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "newGuide",
+            "value": "New Guide"
+        }]
+    }, {
+        "_id": "CcJe8P8aQ8bN4586u",
+        "lang": "pt",
+        "componentN": "loadingGuideFeedback",
+        "toolN": "client",
+        "entries": [{
+            "id": "loading",
+            "value": "a carregar..."
+        }]
+    }, {
+        "_id": "DbpzGBiQoCSQy5ZxR",
+        "lang": "de",
+        "componentN": "stepEditBottomLabel",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "edit",
+                "value": "Bearbeiten"
+            },
+            {
+                "id": "layout",
+                "value": "Layout"
+            },
+            {
+                "id": "actions",
+                "value": "Aktionen"
+            },
+            {
+                "id": "advancedSettings",
+                "value": "Mehr Einstellungen"
+            }
+        ]
+    }, {
+        "_id": "EH5zBukK7rzFLwXKa",
+        "lang": "de",
+        "componentN": "generalSettingsBottomContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "keywords",
+                "value": "Kennzeichen"
+            },
+            {
+                "id": "inputPlaceholder",
+                "value": "Inhalt, Seiten, Veröffentlichen"
+            }
+        ]
+    }, {
+        "_id": "EgrhqcATcq5kaFrRb",
+        "lang": "en",
+        "componentN": "editMultimediaLinkDesc",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "multimediaLinkInput",
+                "value": "Multimedia Link"
+            },
+            {
+                "id": "multimediaLinkSpan",
+                "value": "Send"
+            },
+            {
+                "id": "multimediaLinkDesc",
+                "value": "Description"
+            }
+        ]
+    }, {
+        "_id": "EtwX9xJH7ug3SNLWK",
+        "lang": "en",
+        "componentN": "removeStepFeedback",
+        "toolN": "client",
+        "entries": [{
+                "id": "message",
+                "value": "Are you sure you want to delete this step? <p><strong>This action cannot be undone.</strong></p>"
+            },
+            {
+                "id": "cancel",
+                "value": "Cancel"
+            },
+            {
+                "id": "delete",
+                "value": "Delete"
+            }
+        ]
+    }, {
+        "_id": "FQCMhQokhLRBLygnE",
+        "lang": "pt",
+        "componentN": "positionAdjuster",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "positionAdjusterLabel",
+                "value": "Selecione a posição da Bubble"
+            },
+            {
+                "id": "positionAdjusterTitle",
+                "value": "Defina a posição do passo em relação ao elemento na página."
+            }
+        ]
+    }, {
+        "_id": "FxNvZZ9HfQ5ow5sxo",
+        "lang": "de",
+        "componentN": "siteMapBtns",
+        "toolN": "siteMap",
+        "entries": [{
+                "id": "skipSiteMap",
+                "value": "Überspringen"
+            },
+            {
+                "id": "stopSiteMap",
+                "value": "Nicht mehr nachfragen"
+            }
+        ]
+    }, {
+        "_id": "GHeeiiF63HxBDTju9",
+        "lang": "pt",
+        "componentN": "toggleHints",
+        "toolN": "hints",
+        "entries": [{
+                "id": "dontShowThis",
+                "value": "Não mostrar isto"
+            },
+            {
+                "id": "showHints",
+                "value": "Mostrar dicas da interface"
+            },
+            {
+                "id": "title",
+                "value": "Aqui pode ativar ou destivar todas as dicas apresentadas na aplicação."
+            }
+        ]
+    }, {
+        "_id": "GYjw9EcQwM56WMwCD",
+        "lang": "pt",
+        "componentN": "integrationSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Definições de interação"
+            },
+            {
+                "id": "message",
+                "value": "Aqui poderá activar ou desactivar o ecra de overlay (esta funcionalidade torna o fundo do ecra preto e realça apenas um passo) e o formulário de comentários."
+            }
+        ]
+    }, {
+        "_id": "Ghva8zZGtFWzmRkzw",
+        "lang": "en",
+        "componentN": "positioningBar",
+        "toolN": "recording",
+        "entries": [{
+                "id": "close",
+                "value": "Cancel"
+            },
+            {
+                "id": "save",
+                "value": "Save"
+            }
+        ]
+    }, {
+        "_id": "HDR793iyo3D22az5u",
+        "lang": "de",
+        "componentN": "tutorialEdit",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "tutorialSettings",
+                "value": "Guide Einstellungen"
+            },
+            {
+                "id": "generalSettings",
+                "value": "Allgemeine Einstellungen"
+            },
+            {
+                "id": "devicesSettings",
+                "value": "Geräte Einstellungen"
+            },
+            {
+                "id": "interationSettings",
+                "value": "Integrationseinstellungen"
+            },
+            {
+                "id": "pagesSettings",
+                "value": "Seiten Einstellungen"
+            },
+            {
+                "id": "moreSettings",
+                "value": "Mehr Einstellungen"
+            }
+        ]
+    }, {
+        "_id": "HYrF4DbkcmYkpknp5",
+        "lang": "pt",
+        "componentN": "neutralFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Informação desactualizada"
+            },
+            {
+                "id": "second",
+                "value": "Precisa de mais informação"
+            },
+            {
+                "id": "third",
+                "value": "Contém erros de ortografia"
+            }
+        ]
+    }, {
+        "_id": "HsfRxjtcKnFfFJ4cZ",
+        "lang": "en",
+        "toolN": "tutorial",
+        "componentN": "permaLink",
+        "entries": [{
+                "id": "permaLinkLabel",
+                "value": "Permalink"
+            },
+            {
+                "id": "permaLinkTitle",
+                "value": "Set guides that start automatically when users open a specific URL.  You need to copy the key inside the box and paste it in the URL that you want to re-direct."
+            }
+        ]
+    }, {
+        "_id": "JD3CY9ar53zdM4ZAW",
+        "lang": "pt",
+        "componentN": "stepGoal",
+        "toolN": "recording",
+        "entries": [{
+                "id": "addGoal",
+                "value": "Adicionar Objectivo ao passo"
+            },
+            {
+                "id": "removeGoal",
+                "value": "Remover Objectivo"
+            }
+        ]
+    }, {
+        "_id": "JYg5RzQiJKH6SPijM",
+        "lang": "en",
+        "componentN": "editStepMiddleAction",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Select actions"
+            },
+            {
+                "id": "actionAttach",
+                "value": "None"
+            },
+            {
+                "id": "actionPopup",
+                "value": "Pop-Up"
+            },
+            {
+                "id": "actionClick",
+                "value": "Click"
+            },
+            {
+                "id": "actionMouseOver",
+                "value": "MouseOver"
+            },
+            {
+                "id": "editActionTitle",
+                "value": "Select your action. You can select what action the tutorial will preform in each step."
+            },
+            {
+                "id": "noneActionTitle",
+                "value": "The bubble will be attached to the element you chose on the screen. Use this to create a guided step-by-step tour through a webpage"
+            },
+            {
+                "id": "popUpActionTitle",
+                "value": "Fix a step in the center of the screen. Onboard new users or give generic information about your business."
+            },
+            {
+                "id": "clickActionTitle",
+                "value": "Used to select an element and redirect users to another page. The help will continue playing on the page you redirected."
+            },
+            {
+                "id": "mouseOverActionTitle",
+                "value": "Attach a tutorial step on a hover menu or in an element that does not always appear on the screen."
+            },
+            {
+                "id": "actionGenericMessage",
+                "value": "Press upper button to activate Action"
+            },
+            {
+                "id": "actionNextMessage",
+                "value": "Tutorial continues on next"
+            }
+        ]
+    }, {
+        "_id": "JckeBKo7aNSCbESA9",
+        "lang": "en",
+        "componentN": "welcomeHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Welcome! I’m Helppier"
+            },
+            {
+                "id": "message",
+                "value": "Thank you for installing me. I will be joining you on this incredible journey! Together we will improve your onboarding process and user experience."
+            }
+        ]
+    }, {
+        "_id": "JtrW8jv8vb7HnWyfy",
+        "lang": "de",
+        "componentN": "editMultimediaLinkDesc",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "multimediaLinkInput",
+                "value": "Multimedia Link"
+            },
+            {
+                "id": "multimediaLinkSpan",
+                "value": "Senden"
+            },
+            {
+                "id": "multimediaLinkDesc",
+                "value": "Beschreibung"
+            }
+        ]
+    }, {
+        "_id": "K6WSLpqmzQQATrEfw",
+        "lang": "pt",
+        "componentN": "publishGuideHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Publique um guia!"
+            },
+            {
+                "id": "message",
+                "value": "Se pretende publicar um guia e torná-lo público para os utilizadores necessita de o associar a uma página específica."
+            }
+        ]
+    }, {
+        "_id": "K7xyRYPNGzp2MtHj4",
+        "lang": "de",
+        "componentN": "generalSettingsMiddleContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "draftBtn",
+                "value": "Entwurf"
+            },
+            {
+                "id": "pubBtn",
+                "value": "Veröffentlicht"
+            }
+        ]
+    }, {
+        "_id": "KXzxRpxJHhbgT8rFq",
+        "lang": "en",
+        "toolN": "tutorial",
+        "componentN": "buttonsTitles",
+        "entries": [{
+                "id": "newGuideBtnTitle",
+                "value": "Create new guide"
+            },
+            {
+                "id": "editTutorialBtnTitle",
+                "value": "Edit your guide"
+            },
+            {
+                "id": "recordingBtnTitle",
+                "value": "Start recording a guide"
+            },
+            {
+                "id": "saveGuideBtnTitle",
+                "value": "Save your guide"
+            },
+            {
+                "id": "previewGuideBtnTitle",
+                "value": "Preview your guide"
+            },
+            {
+                "id": "stopRecordingBtnTitle",
+                "value": "Stop your recording"
+            },
+            {
+                "id": "editStepBtnTitle",
+                "value": "Edit this step"
+            },
+            {
+                "id": "cpyPermalinkBtnTitle",
+                "value": "Copy permalink"
+            },
+            {
+                "id": "loginBtnTitle",
+                "value": "Login"
+            },
+            {
+                "id": "guidesBtnTitle",
+                "value": "Guides"
+            },
+            {
+                "id": "closeBtnTitle",
+                "value": "Close widget"
+            },
+            {
+                "id": "dragBtnTitle",
+                "value": "Drag this menu"
+            },
+            {
+                "id": "restartRecBtnTitle",
+                "value": "Restart your recording"
+            },
+            {
+                "id": "editBtnTitle",
+                "value": "Edit step info"
+            },
+            {
+                "id": "layoutBtnTitle",
+                "value": "Edit step layout"
+            },
+            {
+                "id": "actionsBtnTitle",
+                "value": "Edit step actions"
+            },
+            {
+                "id": "moreSettingsBtnTitle",
+                "value": "Edit bubble position and more"
+            },
+            {
+                "id": "generalSettingsBtnTitle",
+                "value": "Edit guide info"
+            },
+            {
+                "id": "deviceSettingsBtnTitle",
+                "value": "Edit where to show guide"
+            },
+            {
+                "id": "interactionSettingsBtnTitle",
+                "value": "Edit guide interactions"
+            },
+            {
+                "id": "pageSettingsBtnTitle",
+                "value": "Edit guide pages"
+            },
+            {
+                "id": "moreGuideSettingsBtnTitle",
+                "value": "Edit auto play and more"
+            },
+            {
+                "id": "backBtnTitle",
+                "value": "Go back to the previous screen"
+            },
+            {
+                "id": "deleteBtnTitle",
+                "value": "Delete guide"
+            },
+            {
+                "id": "quickEditTitle",
+                "value": "Quick edit this step"
+            },
+            {
+                "id": "reselectStepBtn",
+                "value": "Change page element"
+            },
+            {
+                "id": "deleteStepBtn",
+                "value": "Delete step"
+            },
+            {
+                "id": "closeStepBtn",
+                "value": "Close step"
+            },
+            {
+                "id": "hiddenLabel",
+                "value": "Hidden"
+            },
+            {
+                "id": "hiddenTitle",
+                "value": "This guide will not appear to your users on guides list."
+            }
+        ]
+    }, {
+        "_id": "KcYeRGfz8iepfbfao",
+        "lang": "en",
+        "componentN": "visibilityPage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "choosewheretheguideshouldappearson",
+                "value": "Choose where the guide should appears on."
+            },
+            {
+                "id": "allpagev2",
+                "value": "All pages"
+            },
+            {
+                "id": "specificpagev2",
+                "value": "Specific Page"
+            },
+            {
+                "id": "Theguidewillappearonthewidgetofallpagesofyourwebsite",
+                "value": "The guide will appear on the widget of all pages of your website."
+            },
+            {
+                "id": "theguideappeartoyourusersonthepageonwhichyouselectedItbecomesvisibleonlyonthetargetpage",
+                "value": "The guide appear to your users on the page on which you selected. It becomes visible only on the target page."
+            },
+            {
+                "id": "entertheURLaddress",
+                "value": "Enter the URL address."
+            },
+            {
+                "id": "saveasFavourite",
+                "value": "Save as Favourite"
+            },
+            {
+                "id": "ifElementIsMissing",
+                "value": "if Element is missing"
+            },
+            {
+                "id": "selectStepElement",
+                "value": "Choose a step element"
+            },
+            {
+                "id": "ifElementIsMissingLabel",
+                "value": "Allows to hide this guide from the list if an element on your website is omitted or if it disappeared. The guide is visible on the list only when the element is present on the screen. This feature should be used when a step element is attached to an element that might be hidden from the screen."
+            }
+        ]
+    }, {
+        "_id": "KnB7oKnhvQfFqkNn4",
+        "lang": "en",
+        "componentN": "LeaveFeedbackMessage",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "title",
+            "value": "Leave your feedback here!"
+        }]
+    }, {
+        "_id": "LEpsiENddwjH753A5",
+        "lang": "pt",
+        "componentN": "stepTitle",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "stepTitlePlaceholder",
+                "value": "Insira o titulo aqui"
+            },
+            {
+                "id": "stepTitleDescPlaceholder",
+                "value": "Com o Helppier, pode criar uma experiência mais agradável e ensinar como comprar ou usar o seu produto"
+            }
+        ]
+    }, {
+        "_id": "LFT6bD6qDP9Mv9QXv",
+        "lang": "pt",
+        "componentN": "settingsButtonStepHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Configure o seu guia."
+            },
+            {
+                "id": "message",
+                "value": "Nesta área tem algumas opções para configurar o seu guia."
+            }
+        ]
+    }, {
+        "_id": "Lv3BnRDDscHcNPfA6",
+        "lang": "pt",
+        "componentN": "positioningBar",
+        "toolN": "recording",
+        "entries": [{
+                "id": "close",
+                "value": "Cancelar"
+            },
+            {
+                "id": "save",
+                "value": "Guardar"
+            }
+        ]
+    }, {
+        "_id": "MAkZYe26Eqcc4sezA",
+        "lang": "de",
+        "componentN": "positionAdjuster",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "positionAdjusterLabel",
+            "value": "Position auswählen"
+        }]
+    }, {
+        "_id": "MJGeS9qp5WLikzjJh",
+        "lang": "pt",
+        "componentN": "generalSettingsBottomContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "keywords",
+                "value": "Palavras-Chave"
+            },
+            {
+                "id": "inputPlaceholder",
+                "value": "Conteudo, Páginas, Publicar"
+            },
+            {
+                "id": "keywordsTitle",
+                "value": "(Opcional) Pode adicionar palavras-chave para agrupar guias."
+            }
+        ]
+    }, {
+        "_id": "MTqcjEuiEFaiMz5ud",
+        "lang": "en",
+        "componentN": "topPageSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Set where in the site you want to show"
+            },
+            {
+                "id": "selectPageBtn",
+                "value": "Select Page"
+            },
+            {
+                "id": "createPageBtn",
+                "value": "Create new Page"
+            },
+            {
+                "id": "pageNameInput",
+                "value": "Page Name"
+            },
+            {
+                "id": "pageUrlInput",
+                "value": "Page Url"
+            }
+        ]
+    }, {
+        "_id": "MiTKqk64TuuLGxfCy",
+        "lang": "de",
+        "componentN": "topInteractionSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Elemente zum aktivieren auswählen"
+            },
+            {
+                "id": "overlayBtn",
+                "value": "Hell hervorheben"
+            },
+            {
+                "id": "feedbackBtn",
+                "value": "Feedback Formular"
+            }
+        ]
+    }, {
+        "_id": "MjHLMPfeFv8C6EsLA",
+        "lang": "en",
+        "componentN": "stepListSegmentation",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Key and Value"
+            },
+            {
+                "id": "segmentationKey",
+                "value": "Key"
+            },
+            {
+                "id": "segmentationKeyValue",
+                "value": "Value"
+            },
+            {
+                "id": "segmentationInput",
+                "value": "Add Segmentation"
+            },
+            {
+                "id": "segmentationTitle",
+                "value": "Show different guides for different types of visitors by customizing the dimensions or values of any set conditions."
+            }
+        ]
+    }, {
+        "_id": "N89rptQpuzS5YqhLe",
+        "lang": "pt",
+        "toolN": "tutorial",
+        "componentN": "buttonsTitles",
+        "entries": [{
+                "id": "newGuideBtnTitle",
+                "value": "Criar novo guia"
+            },
+            {
+                "id": "editTutorialBtnTitle",
+                "value": "Editar o guia"
+            },
+            {
+                "id": "recordingBtnTitle",
+                "value": "Começar a gavar um guia"
+            },
+            {
+                "id": "saveGuideBtnTitle",
+                "value": "Gravar o guia"
+            },
+            {
+                "id": "previewGuideBtnTitle",
+                "value": "Pre-visualizar o guia"
+            },
+            {
+                "id": "stopRecordingBtnTitle",
+                "value": "Parar a gravação"
+            },
+            {
+                "id": "editStepBtnTitle",
+                "value": "Editar este passo"
+            },
+            {
+                "id": "cpyPermalinkBtnTitle",
+                "value": "Copiar permalink"
+            },
+            {
+                "id": "loginBtnTitle",
+                "value": "Iniciar Sessão"
+            },
+            {
+                "id": "guidesBtnTitle",
+                "value": "Guias"
+            },
+            {
+                "id": "closeBtnTitle",
+                "value": "Fechar o widget"
+            },
+            {
+                "id": "dragBtnTitle",
+                "value": "Arrastar este menu"
+            },
+            {
+                "id": "restartRecBtnTitle",
+                "value": "Reiniciar a gravação"
+            },
+            {
+                "id": "editBtnTitle",
+                "value": "Editar a informação do passo"
+            },
+            {
+                "id": "layoutBtnTitle",
+                "value": "Editar esquema do passo"
+            },
+            {
+                "id": "actionsBtnTitle",
+                "value": "Editar ações do passo"
+            },
+            {
+                "id": "moreSettingsBtnTitle",
+                "value": "Editar posição da bubble e mais"
+            },
+            {
+                "id": "generalSettingsBtnTitle",
+                "value": "Editar informação do guia"
+            },
+            {
+                "id": "deviceSettingsBtnTitle",
+                "value": "Editar onde monstrar o guia"
+            },
+            {
+                "id": "interactionSettingsBtnTitle",
+                "value": "Editar interações do guia"
+            },
+            {
+                "id": "pageSettingsBtnTitle",
+                "value": "Editar páginas do guia"
+            },
+            {
+                "id": "moreGuideSettingsBtnTitle",
+                "value": "Editar play automático e mais"
+            },
+            {
+                "id": "backBtnTitle",
+                "value": "Retroceder para o ecrã anterior"
+            },
+            {
+                "id": "deleteBtnTitle",
+                "value": "Apagar guia"
+            },
+            {
+                "id": "quickEditTitle",
+                "value": "Quick edit this step"
+            },
+            {
+                "id": "reselectStepBtn",
+                "value": "Alterar elemento da página"
+            },
+            {
+                "id": "deleteStepBtn",
+                "value": "Apagar passo"
+            },
+            {
+                "id": "closeStepBtn",
+                "value": "Fechar passo"
+            },
+            {
+                "id": "hiddenLabel",
+                "value": "Oculto"
+            },
+            {
+                "id": "hiddenTitle",
+                "value": "Este guia não irá aparecer para nenhum dos utilizadores na lista de guias."
+            }
+        ]
+    }, {
+        "_id": "NcmkeKx6fbueXD9Ey",
+        "lang": "en",
+        "componentN": "stepTitle",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "stepTitlePlaceholder",
+                "value": "Type here..."
+            },
+            {
+                "id": "stepTitleDescPlaceholder",
+                "value": "Using Helppier, you can create a more pleasant experience and teach how to buy or use your product."
+            }
+        ]
+    }, {
+        "_id": "NkSG7w8n7i26J4FyM",
+        "lang": "de",
+        "componentN": "editStepMiddleAction",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Aktion auswählen"
+            },
+            {
+                "id": "actionAttach",
+                "value": "keine"
+            },
+            {
+                "id": "actionPopup",
+                "value": "Pop-Up"
+            },
+            {
+                "id": "actionClick",
+                "value": "Klick"
+            },
+            {
+                "id": "actionMouseOver",
+                "value": "MouseOver"
+            }
+        ]
+    }, {
+        "_id": "P4LbmhD9zi4nD5Yf6",
+        "lang": "en",
+        "componentN": "stepGoal",
+        "toolN": "recording",
+        "entries": [{
+                "id": "addGoal",
+                "value": "Add Goal to step"
+            },
+            {
+                "id": "removeGoal",
+                "value": "Remove Goal"
+            }
+        ]
+    }, {
+        "_id": "PLEf5b3ferZ7rdDpX",
+        "lang": "en",
+        "componentN": "editStepMiddleLayout",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "label",
+                "value": "Select your layout"
+            },
+            {
+                "id": "iconTitle",
+                "value": "Title"
+            },
+            {
+                "id": "iconTitleDesc",
+                "value": "Title + Text"
+            },
+            {
+                "id": "iconDesc",
+                "value": "Text"
+            },
+            {
+                "id": "iconImageDesc",
+                "value": "Media + Text"
+            },
+            {
+                "id": "iconImage",
+                "value": "Media"
+            },
+            {
+                "id": "iconTitle",
+                "value": "Title"
+            },
+            {
+                "id": "iconCustom",
+                "value": "Custom HTML"
+            },
+            {
+                "id": "layoutTitle",
+                "value": "Select your Layout. You can insert images, videos (via URL), hyperlinks and customize through HTML."
+            },
+            {
+                "id": "editLayoutTitle",
+                "value": "Select your Layout. You can insert images, videos (via URL), hyperlinks and customize through HTML."
+            }
+        ]
+    }, {
+        "_id": "PyRbewLwLQTuLeoZQ",
+        "lang": "en",
+        "componentN": "happyFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Problem easily solved"
+            },
+            {
+                "id": "second",
+                "value": "Highly Intuitive"
+            },
+            {
+                "id": "third",
+                "value": "Clear Message"
+            }
+        ]
+    }, {
+        "_id": "QKHAkEf3j9npSxRv6",
+        "lang": "pt",
+        "componentN": "recording",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "newGuide",
+                "value": "Novo Guia"
+            },
+            {
+                "id": "guideName",
+                "value": "Nome"
+            },
+            {
+                "id": "description",
+                "value": "Descrição"
+            },
+            {
+                "id": "keywords",
+                "value": "Palavras-Chave"
+            },
+            {
+                "id": "tutorial",
+                "value": "Tutorial"
+            },
+            {
+                "id": "tooltip",
+                "value": "Tooltip"
+            },
+            {
+                "id": "newGuideTitle",
+                "value": "Dê um nome ao seu guia aqui."
+            },
+            {
+                "id": "descriptionTitle",
+                "value": "Escreva uma breve descrição que explique o conteudo do guia."
+            },
+            {
+                "id": "keywordsTitle",
+                "value": "(Opcional) Pode adicionar palavras-chave para agrupar guias."
+            },
+            {
+                "id": "categoryLabel",
+                "value": "Categoria"
+            },
+            {
+                "id": "categoryInfo",
+                "value": "Seleccione uma categoria para organizar os seus guias no widget Helppier. Pode gerir e adicionar novas categorias no painel de controlo."
+            },
+            {
+                "id": "reselectOptionsLabel",
+                "value": "Opções para re-selecionar"
+            },
+            {
+                "id": "reselectOnSLabel",
+                "value": "Re-selecionar no ecrã"
+            },
+            {
+                "id": "reselectMLabel",
+                "value": "Re-selecionar manualmente"
+            },
+            {
+                "id": "reselectOnSInfo",
+                "value": "Modifique o elemento seleccionando um novo directamente no site."
+            },
+            {
+                "id": "reselectMInfo",
+                "value": "É possível usar selector HTML para seleccionar elementos específicos nas páginas do site que pretende adicionar um novo passo do guia. Esta opção de Selecção Manual permite uma maior precisão ao escolher os elementos do seu site. Pode usar o Web Inspector do seu browser para verificar o selector HTML do elemento correspondente."
+            }
+        ]
+    }, {
+        "_id": "QToRoTgG7R2QSiBHM",
+        "lang": "de",
+        "componentN": "stepListEditTutorial",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "settings",
+                "value": "Einstellungen"
+            },
+            {
+                "id": "languages",
+                "value": "Sprachen"
+            }
+        ]
+    }, {
+        "_id": "Qj2kvaBMrEH37Mdbh",
+        "lang": "en",
+        "componentN": "initialFailBehaviors",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "initialFBLabel",
+                "value": "Choose what to do if this guide cannot start:"
+            },
+            {
+                "id": "initialDoNothingLabel",
+                "value": "Stop playing the guide"
+            },
+            {
+                "id": "initialDoNothingInfo",
+                "value": "If an error occurred, the guide will close and stop playing."
+            },
+            {
+                "id": "initialMessageLabel",
+                "value": "Display an error message"
+            },
+            {
+                "id": "initialMessageInfo",
+                "value": "You can deliver a own custom message to inform your users when an unexpected error occurred while loading this guide. It will help the user understand when something went wrong and the guide failed. These messages will be shown on the center of the web page."
+            },
+            {
+                "id": "initialRefreshLabel",
+                "value": "Reload the web page"
+            },
+            {
+                "id": "initialRefreshInfo",
+                "value": "The page will refresh to try restart the guide."
+            },
+            {
+                "id": "initialSpecificPageLabel",
+                "value": "Redirect the user to a start page"
+            },
+            {
+                "id": "initialSpecificPageInfo",
+                "value": "Enter a page URL to jump to in order to run the guide."
+            },
+            {
+                "id": "otherpartsFBLabel",
+                "value": "Choose what to do if other steps cannot start:"
+            },
+            {
+                "id": "otherpartsDoNothingLabel",
+                "value": "Stop playing the guide"
+            },
+            {
+                "id": "otherpartsDoNothingInfo",
+                "value": "If an error occurred, the guide will close and stop playing."
+            },
+            {
+                "id": "otherpartsMessageLabel",
+                "value": "Define a error message to be displayed"
+            },
+            {
+                "id": "otherpartsMessageInfo",
+                "value": "You can deliver a own custom message to inform your users when an unexpected error occurred while loading this guide. It will help the user understand when something go wrong and the guide fail. These messages will be shown on the center of the web page."
+            },
+            {
+                "id": "failBehaviorsAddNewMessage",
+                "value": "Create new message"
+            },
+            {
+                "id": "initialStartOtherTutLabel",
+                "value": "Start a new tutorial first"
+            },
+            {
+                "id": "initialStartOtherTutInfo",
+                "value": "When enabled, this option allows you to choose a new guide to be played before the current tutorial, in order to forward the user for a suitable area of the website. Choose a new tutorial from the list below and  the current tutorial will start automatically after the new tutorial."
+            }
+        ]
+    }, {
+        "_id": "QnexNYu6dmDvLD3G8",
+        "lang": "en",
+        "componentN": "inLoveFeedback",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "title",
+                "value": "How can we be of better service?"
+            },
+            {
+                "id": "placeholder",
+                "value": "Enter your idea"
+            }
+        ]
+    }, {
+        "_id": "QvKTQewHs2yxttWcv",
+        "lang": "en",
+        "componentN": "sadFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Message wasn’t clear"
+            },
+            {
+                "id": "second",
+                "value": "Found errors"
+            },
+            {
+                "id": "third",
+                "value": "Irrelevant information"
+            }
+        ]
+    }, {
+        "_id": "R2hcwgjJixyjxZL4v",
+        "lang": "pt",
+        "componentN": "autoPlay",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "autoPlayLabel",
+                "value": "Comportamento do Play Automático"
+            },
+            {
+                "id": "onloadpageCheckbox",
+                "value": "Ao entrar numa página"
+            },
+            {
+                "id": "onunloadpageCheckbox",
+                "value": "Ao sair de uma página (Brevemente!)"
+            },
+            {
+                "id": "timerCheckbox",
+                "value": "Temporizador"
+            },
+            {
+                "id": "timerValue",
+                "value": "Segundos"
+            },
+            {
+                "id": "autoPlayTitle",
+                "value": "Integração (defina mensagens que apareçam a novos visitantes); Mensagens de saída (definir mensagens que aparecem quando alguem está para sair do website); Temporizador (definir mensagens que aparecerão ao fim de um determinado tempo)"
+            }
+        ]
+    }, {
+        "_id": "R4y4rNndGFQjHbFfu",
+        "lang": "en",
+        "componentN": "courses",
+        "toolN": "training",
+        "entries": [{
+                "id": "newCourse",
+                "value": "New Course"
+            },
+            {
+                "id": "courseName",
+                "value": "Course Name"
+            },
+            {
+                "id": "courseDescription",
+                "value": "Course Description"
+            },
+            {
+                "id": "createCourse",
+                "value": "Create Course"
+            },
+            {
+                "id": "courseSettings",
+                "value": "Course Settings"
+            },
+            {
+                "id": "aboutCourse",
+                "value": "About the Course"
+            },
+            {
+                "id": "video",
+                "value": "Video File"
+            },
+            {
+                "id": "guide",
+                "value": "Interactive Guide"
+            },
+            {
+                "id": "files",
+                "value": "Assessment Files"
+            },
+            {
+                "id": "quiz",
+                "value": "Quiz"
+            },
+            {
+                "id": "reading",
+                "value": "PDF Document"
+            },
+            {
+                "id": "noCoursesYet",
+                "value": "No courses are available at this moment"
+            },
+            {
+                "id": "cantLoadCourses",
+                "value": "Can't load courses"
+            },
+            {
+                "id": "noContentYetTitle",
+                "value": "No content available"
+            },
+            {
+                "id": "noContentYetText",
+                "value": "This module is currently empty."
+            },
+            {
+                "id": "cantLoadModule",
+                "value": "This module doesn't appear to be working at the moment."
+            },
+            {
+                "id": "oops",
+                "value": "Oops..."
+            },
+            {
+                "id": "pleaseTryAgain",
+                "value": "Please try again later."
+            },
+            {
+                "id": "dialogPublish",
+                "value": "Are you sure you want to publish?"
+            },
+            {
+                "id": "dialogRemove",
+                "value": "Are you sure you want to remove?"
+            }
+        ]
+    }, {
+        "_id": "R9S5JJ5SBGRZxWTWJ",
+        "lang": "pt",
+        "componentN": "topPageSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Escolha onde no site deseja mostrar"
+            },
+            {
+                "id": "selectPageBtn",
+                "value": "Selecione a página"
+            },
+            {
+                "id": "createPageBtn",
+                "value": "Criar uma página nova"
+            },
+            {
+                "id": "pageNameInput",
+                "value": "Nome da Página"
+            },
+            {
+                "id": "pageUrlInput",
+                "value": "Caminho da Página"
+            }
+        ]
+    }, {
+        "_id": "Ray3g38jNCyqi4aDA",
+        "lang": "de",
+        "componentN": "recording",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "newGuide",
+                "value": "Neuer Guide"
+            },
+            {
+                "id": "guideName",
+                "value": "Name"
+            },
+            {
+                "id": "description",
+                "value": "Beschreibung"
+            },
+            {
+                "id": "keywords",
+                "value": "Kennzeichen"
+            },
+            {
+                "id": "tutorial",
+                "value": "Tutorial"
+            },
+            {
+                "id": "tooltip",
+                "value": "Tooltip"
+            },
+            {
+                "id": "tutorialName",
+                "value": "Tutorial Name"
+            }
+        ]
+    }, {
+        "_id": "SSghawGQWQA85rehX",
+        "lang": "en",
+        "componentN": "recordingButton",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "recordingButton",
+            "value": "Record"
+        }]
+    }, {
+        "_id": "Spm8QuqQ24nbwxCSr",
+        "lang": "pt",
+        "componentN": "moreOptionsTopContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "segmentationLabel",
+                "value": "Segmentação"
+            },
+            {
+                "id": "autoPlayLabel",
+                "value": "Play Automático"
+            }
+        ]
+    }, {
+        "_id": "T9Ho3GRM4JJRkRST8",
+        "lang": "en",
+        "componentN": "pageSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Page Settings"
+            },
+            {
+                "id": "message",
+                "value": "You can associate the guides to a specific page or a set of pages."
+            }
+        ]
+    }, {
+        "_id": "TbWzuw7yzZqijtQ5n",
+        "lang": "en",
+        "componentN": "searchTraining",
+        "toolN": "training",
+        "entries": [{
+            "id": "noTrainingResults",
+            "value": "There are no results that match your search"
+        }]
+    }, {
+        "_id": "W3ydino8SmGkNLWGt",
+        "lang": "en",
+        "componentN": "deviceSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Device Settings"
+            },
+            {
+                "id": "message",
+                "value": "You can choose in which devices you want to show your guides (Desktop, Tablet or Smartphone)."
+            }
+        ]
+    }, {
+        "_id": "W4oQjQ3BwNWYSiFGj",
+        "lang": "pt",
+        "componentN": "editStepMiddleLayout",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "label",
+                "value": "Escolha o seu esquema"
+            },
+            {
+                "id": "iconTitle",
+                "value": "Título"
+            },
+            {
+                "id": "iconTitleDesc",
+                "value": "Título + Texto"
+            },
+            {
+                "id": "iconDesc",
+                "value": "Texto"
+            },
+            {
+                "id": "iconImageDesc",
+                "value": "Media + Texto"
+            },
+            {
+                "id": "iconImage",
+                "value": "Media"
+            },
+            {
+                "id": "iconTitle",
+                "value": "Título"
+            },
+            {
+                "id": "iconCustom",
+                "value": "HTML Personalizado"
+            },
+            {
+                "id": "editLayoutTitle",
+                "value": "Escolha o seu esquema, Pode inserir imagens, videos (via URL), hyperlinks e customizar através de HTML."
+            }
+        ]
+    }, {
+        "_id": "W97PKbai8Qiqi8pKt",
+        "lang": "pt",
+        "componentN": "stepListEditTutorial",
+        "toolN": "recording",
+        "entries": [{
+            "id": "managePosition",
+            "value": "Alterar Posição"
+        }]
+    }, {
+        "_id": "Wf6sAP5drxMYjeHot",
+        "lang": "en",
+        "componentN": "innerLoading",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "loadingLabel",
+            "value": "Loading..."
+        }]
+    }, {
+        "_id": "WkSs4siW2t7GsCPB6",
+        "lang": "de",
+        "componentN": "draftPublishBar",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "draftButton",
+                "value": "Entwürfe"
+            },
+            {
+                "id": "publishButton",
+                "value": "Veröffentlicht"
+            }
+        ]
+    }, {
+        "_id": "WmWT758Fjo2bykAZf",
+        "lang": "pt",
+        "componentN": "visibilityPage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "choosewheretheguideshouldappearson",
+                "value": "Escolhe em que página o guia irá aparecer."
+            },
+            {
+                "id": "allpagev2",
+                "value": "Todas as páginas"
+            },
+            {
+                "id": "specificpagev2",
+                "value": "Numa página específica"
+            },
+            {
+                "id": "Theguidewillappearonthewidgetofallpagesofyourwebsite",
+                "value": "O guia irá aparecer na lista, em todas as páginas."
+            },
+            {
+                "id": "theguideappeartoyourusersonthepageonwhichyouselectedItbecomesvisibleonlyonthetargetpage",
+                "value": "O guia só estará disponível na páginas escolhida."
+            },
+            {
+                "id": "entertheURLaddress",
+                "value": "Insira o URL."
+            },
+            {
+                "id": "saveasFavourite",
+                "value": "Guardar como favorita"
+            },
+            {
+                "id": "ifElementIsMissing",
+                "value": "Se o elemento estiver escondido"
+            },
+            {
+                "id": "selectStepElement",
+                "value": "Escolha o passo do elemento"
+            },
+            {
+                "id": "ifElementIsMissingLabel",
+                "value": "Permite ocultar este guia da lista se um elemento de página do seu site estiver omitido ou desaparecer. O guia é visível na lista apenas quando o elemento estiver presente no ecrã. Esta opção deve ser utilizada quando um elemento do passo é adicionado a um elemento que pode estar escondido momentaneamente no ecrã."
+            }
+        ]
+    }, {
+        "_id": "XRqxce4JDTQiRmYXC",
+        "lang": "pt",
+        "componentN": "pageSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Definições das páginas"
+            },
+            {
+                "id": "message",
+                "value": "Pode associar os guias a uma página específica ou a um conjunto de páginas"
+            }
+        ]
+    }, {
+        "_id": "Xhfh5BiCHgzJXFnFk",
+        "lang": "pt",
+        "componentN": "happyFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Problema facilmente resolvido"
+            },
+            {
+                "id": "second",
+                "value": "Muito intuitivo"
+            },
+            {
+                "id": "third",
+                "value": "Mensagem clara"
+            }
+        ]
+    }, {
+        "_id": "XpoDtYKNNw5rHbbHg",
+        "lang": "pt",
+        "componentN": "newPageHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Crie uma página!"
+            },
+            {
+                "id": "message",
+                "value": "Cada guia criado precisa de ter uma página específica associada. Aqui pode selecionar uma página ou criar uma nova preenchendo as informações necessárias (nome e caminho da página)"
+            }
+        ]
+    }, {
+        "_id": "XvvrdWEq9hoaQfWDj",
+        "lang": "en",
+        "componentN": "playGuideHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Play Guides"
+            },
+            {
+                "id": "message",
+                "value": "Here you can view the guides you created. Select the guide you want to play by clicking on it."
+            }
+        ]
+    }, {
+        "_id": "YSQKfAbREjgN4N528",
+        "lang": "en",
+        "componentN": "startUrlPage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "choosewheretheguideshouldstarted",
+                "value": "Choose where the guide should started."
+            },
+            {
+                "id": "allpagev2",
+                "value": "All pages"
+            },
+            {
+                "id": "specificpagev2",
+                "value": "Specific Page"
+            },
+            {
+                "id": "choosewheretheguideshouldcontinueon",
+                "value": "Choose where the guide should continue on."
+            },
+            {
+                "id": "theguidewillstartonallpagesofyourwebsite",
+                "value": "The guide will start on all pages of your website."
+            },
+            {
+                "id": "theguidewillstartonthepageonwhichyouselectedItjumpstothetargetpage",
+                "value": "The guide will start on the page on which you selected. It jumps to the target page."
+            },
+            {
+                "id": "entertheURLaddress",
+                "value": "Enter the URL address."
+            }
+        ]
+    }, {
+        "_id": "ZCsCZinSnfBQk9TgF",
+        "lang": "pt",
+        "componentN": "stepListEditTutorial",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "settings",
+                "value": "Definições"
+            },
+            {
+                "id": "languages",
+                "value": "Linguagens"
+            }
+        ]
+    }, {
+        "_id": "ZD83qnct9u78S939C",
+        "lang": "en",
+        "componentN": "failBehaviors",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "recordingPlayDefaultMsgTitle",
+                "value": "Oops!"
+            },
+            {
+                "id": "recordingPlayDefaultMsgBody",
+                "value": "The option chosen on settings when a guide can not start doesn't allow to preview this tutorial while you're recording it."
+            },
+            {
+                "id": "recordingPlayDefaultMsgFooter",
+                "value": "Try to play it on the widget list."
+            }
+        ]
+    }, {
+        "_id": "ZKQYwsgsPdwiuFJ3h",
+        "lang": "pt",
+        "componentN": "loadingGuideErrorFeedback",
+        "toolN": "client",
+        "entries": [{
+                "id": "title",
+                "value": "Ooops!"
+            },
+            {
+                "id": "textBody",
+                "value": "Ocorreu um erro e este guia não foi carregado corretamente."
+            },
+            {
+                "id": "footer",
+                "value": "Por favor tente reproduzi-lo novamente."
+            }
+        ]
+    }, {
+        "_id": "Zi4iMFqs57rfkWqR6",
+        "lang": "pt",
+        "componentN": "LeaveFeedbackMessage",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "title",
+            "value": "Deixe aqui o seu feedback!"
+        }]
+    }, {
+        "_id": "ZiwfSF5TP644jnHSu",
+        "lang": "en",
+        "componentN": "bottomMenuRecordHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Control your recording."
+            },
+            {
+                "id": "message",
+                "value": "Here is the REC menu where you can preview and save your guides."
+            }
+        ]
+    }, {
+        "_id": "Zo3aMEMqeG9Ly4sdC",
+        "lang": "de",
+        "componentN": "editStepDeleteButton",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "deleteBtn",
+            "value": "Löschen"
+        }]
+    }, {
+        "_id": "a4QrYAT6MmZRoGdLr",
+        "lang": "pt",
+        "componentN": "sadFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "A mensagem não foi clara"
+            },
+            {
+                "id": "second",
+                "value": "Encontrei erros"
+            },
+            {
+                "id": "third",
+                "value": "Informação irrelevante"
+            }
+        ]
+    }, {
+        "_id": "abnoGH6BZySxyN5LP",
+        "lang": "pt",
+        "toolN": "tutorial",
+        "componentN": "permaLink",
+        "entries": [{
+                "id": "permaLinkLabel",
+                "value": "Permalink"
+            },
+            {
+                "id": "permaLinkTitle",
+                "value": "Define guias que começam automaticamente quando um utilizador abre um URL específico. Precisa de copiar a chave dentro da caixa de texto e cola-la no url que pretende redirecionar."
+            }
+        ]
+    }, {
+        "_id": "anjzFbLaR2fQpi6pw",
+        "lang": "pt",
+        "componentN": "optionalPrevious",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "optionalPreviousLabel",
+                "value": "Selecione opções de controlo"
+            },
+            {
+                "id": "optionalPreviousBtn",
+                "value": "Botão Anterior"
+            },
+            {
+                "id": "optionalPreviousTitle",
+                "value": "Activa ou desactiva o “botão Anterior” para que o utilizadores possam navegar pelos vários passos do seu guia."
+            },
+            {
+                "id": "jumptoLabel",
+                "value": "Avançar para"
+            },
+            {
+                "id": "skipableLabel",
+                "value": "Saltar Passo Automaticamente"
+            }
+        ]
+    }, {
+        "_id": "aqMvGvNqS8SjfxTkJ",
+        "lang": "pt",
+        "componentN": "quickEdit",
+        "toolN": "client",
+        "entries": [{
+                "id": "next",
+                "value": "Próximo"
+            },
+            {
+                "id": "previous",
+                "value": "Anterior"
+            }
+        ]
+    }, {
+        "_id": "awAH2ZrkWLj8Bnzp9",
+        "lang": "pt",
+        "componentN": "searchTraining",
+        "toolN": "training",
+        "entries": [{
+            "id": "noTrainingResults",
+            "value": "Nenhum resultado encontrado para a sua pesquisa"
+        }]
+    }, {
+        "_id": "awDa5957D6xSXF6yv",
+        "lang": "en",
+        "componentN": "moreOptionsTopContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "segmentationLabel",
+                "value": "Segmentation"
+            },
+            {
+                "id": "autoPlayLabel",
+                "value": "AutoPlay"
+            }
+        ]
+    }, {
+        "_id": "bc3GjdmaRc7fDMSvY",
+        "lang": "en",
+        "componentN": "editStepDeleteButton",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "deleteBtn",
+            "value": "Delete"
+        }]
+    }, {
+        "_id": "bePoWz2bLf4gCk2DQ",
+        "lang": "de",
+        "componentN": "stepIndexButtons",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "next",
+                "value": "Weiter"
+            },
+            {
+                "id": "previous",
+                "value": "Zurück"
+            }
+        ]
+    }, {
+        "_id": "bijRyyt4xporJaqx8",
+        "lang": "pt",
+        "componentN": "recordingButton",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "recordingButton",
+            "value": "Gravar"
+        }]
+    }, {
+        "_id": "buH3S3gTBD4RHs6zX",
+        "lang": "pt",
+        "componentN": "startUrlPage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "choosewheretheguideshouldstarted",
+                "value": "Escolhe em que página o guia irá começar."
+            },
+            {
+                "id": "allpagev2",
+                "value": "Todas as páginas"
+            },
+            {
+                "id": "specificpagev2",
+                "value": "Numa página específica"
+            },
+            {
+                "id": "choosewheretheguideshouldcontinueon",
+                "value": "Escolha em que página o guia irá continuar."
+            },
+            {
+                "id": "theguidewillstartonallpagesofyourwebsite",
+                "value": "O guia poderá começar em todas as páginas."
+            },
+            {
+                "id": "theguidewillstartonthepageonwhichyouselectedItjumpstothetargetpage",
+                "value": "O guia irá começar numa página específica."
+            },
+            {
+                "id": "entertheURLaddress",
+                "value": "Insira o URL."
+            }
+        ]
+    }, {
+        "_id": "cF77MMCQFWb6iC4cd",
+        "lang": "de",
+        "componentN": "inLoveFeedback",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "title",
+                "value": "Wie können wir von besseren Service sein?"
+            },
+            {
+                "id": "placeholder",
+                "value": "Geben Sie Ihre Idee"
+            }
+        ]
+    }, {
+        "_id": "cSXeyZc4dCkJAu8Jm",
+        "lang": "en",
+        "componentN": "stepListEditTutorial",
+        "toolN": "recording",
+        "entries": [{
+            "id": "managePosition",
+            "value": "Change Position"
+        }]
+    }, {
+        "_id": "d5oLunxDPXvJrHgis",
+        "lang": "en",
+        "componentN": "positionAdjuster",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "positionAdjusterLabel",
+                "value": "Select bubble position"
+            },
+            {
+                "id": "positionAdjusterTitle",
+                "value": "set the position of the step relative to the element in a webpage."
+            }
+        ]
+    }, {
+        "_id": "d6wS9NgXjDEvnJQ8s",
+        "lang": "en",
+        "componentN": "stepEditBottomLabel",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "edit",
+                "value": "Edit"
+            },
+            {
+                "id": "layout",
+                "value": "Layout"
+            },
+            {
+                "id": "actions",
+                "value": "Actions"
+            },
+            {
+                "id": "advancedSettings",
+                "value": "Advanced Settings"
+            }
+        ]
+    }, {
+        "_id": "dYXumC9ssAXh9SAKj",
+        "lang": "en",
+        "componentN": "settingsButtonStepHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Configure your guide."
+            },
+            {
+                "id": "message",
+                "value": "In this area you have some options to configure your guide."
+            }
+        ]
+    }, {
+        "_id": "dgEkuSRrSjZNBqZiE",
+        "lang": "pt",
+        "componentN": "editStepDeleteButton",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "deleteBtn",
+            "value": "Apagar"
+        }]
+    }, {
+        "_id": "dhyQMNkuPksbQfrWe",
+        "lang": "pt",
+        "componentN": "failBehaviorsNewMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "nameLabel",
+                "value": "Nome da Mensagem"
+            },
+            {
+                "id": "nameInfo",
+                "value": "Insira o nome da mensagem que será apresentado na lista de mensagens de erro."
+            },
+            {
+                "id": "titleLabel",
+                "value": "Título da Mensagem"
+            },
+            {
+                "id": "titleInfo",
+                "value": "Insira o título da mensagem."
+            },
+            {
+                "id": "bodyLabel",
+                "value": "Descrição"
+            },
+            {
+                "id": "bodyInfo",
+                "value": "Insira uma descrição informativa acerca da mensagem de erro."
+            },
+            {
+                "id": "footerLabel",
+                "value": "Rodapé"
+            },
+            {
+                "id": "footerInfo",
+                "value": "(Opcional) Adicione uma mensagem de rodapé que aparecerá no fim da caixa da mensagem de erro."
+            },
+            {
+                "id": "saveBtn",
+                "value": "Gravar"
+            },
+            {
+                "id": "saveBtnTitle",
+                "value": "Gravar nova mensagem"
+            }
+        ]
+    }, {
+        "_id": "dtL4LyunxG3SPDcMK",
+        "lang": "pt",
+        "toolN": "tutorial",
+        "componentN": "tools",
+        "entries": [{
+                "id": "Login",
+                "value": "Login"
+            },
+            {
+                "id": "Guides",
+                "value": "Guias"
+            }
+        ]
+    }, {
+        "_id": "efHW2d2qzKH7ds2qp",
+        "lang": "pt",
+        "componentN": "stepIndexButtons",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "next",
+                "value": "Próximo"
+            },
+            {
+                "id": "previous",
+                "value": "Anterior"
+            }
+        ]
+    }, {
+        "_id": "epM4cP2arosdretvo",
+        "lang": "en",
+        "componentN": "topInteractionSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Select the elements to activate"
+            },
+            {
+                "id": "overlayBtn",
+                "value": "Overlay Screen"
+            },
+            {
+                "id": "feedbackBtn",
+                "value": "Feedback Form"
+            },
+            {
+                "id": "guideSettingsTitle",
+                "value": "Use overlay to turn the background darker and highlight only one step. Feedback Form allows you to see what your users think about the helps you created."
+            },
+            {
+                "id": "stepIndicatorBtn",
+                "value": "Display step number"
+            }
+        ]
+    }, {
+        "_id": "euLDvc8772jaHapHE",
+        "lang": "pt",
+        "componentN": "login",
+        "toolN": "login",
+        "entries": [{
+                "id": "emailPlaceholder",
+                "value": "Endereço e-mail"
+            },
+            {
+                "id": "passwordPlaceholder",
+                "value": "Palavra-passe"
+            },
+            {
+                "id": "loginBtn",
+                "value": "Iniciar Sessão"
+            },
+            {
+                "id": "logoutBtn",
+                "value": "Terminar Sessão"
+            }
+        ]
+    }, {
+        "_id": "f2GnW5kNGLzgJuDqc",
+        "lang": "pt",
+        "componentN": "angryFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Mensagem inapropriada"
+            },
+            {
+                "id": "second",
+                "value": "Não funciona corretamente"
+            },
+            {
+                "id": "third",
+                "value": "Problema não resolvido"
+            }
+        ]
+    }, {
+        "_id": "f2btG4dkG6crZmq3D",
+        "lang": "de",
+        "componentN": "recordingButton",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "recordingButton",
+            "value": "Erstellen"
+        }]
+    }, {
+        "_id": "fhM4BS6Bqy4rS9N3G",
+        "lang": "en",
+        "componentN": "saveBeforeExit",
+        "toolN": "client",
+        "entries": [{
+                "id": "message",
+                "value": "Would you like to <strong>save changes</strong> before exiting?"
+            },
+            {
+                "id": "exit",
+                "value": "Exit"
+            },
+            {
+                "id": "save",
+                "value": "Save"
+            }
+        ]
+    }, {
+        "_id": "fmzqfSqj6Nv8HbWAT",
+        "lang": "pt",
+        "componentN": "tutorialEdit",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "tutorialSettings",
+                "value": "Definições do Guia"
+            },
+            {
+                "id": "generalSettings",
+                "value": "Definições Gerais"
+            },
+            {
+                "id": "devicesSettings",
+                "value": "Definições do dispositivo"
+            },
+            {
+                "id": "interationSettings",
+                "value": "Definições de interação"
+            },
+            {
+                "id": "pagesSettings",
+                "value": "Definições das Páginas"
+            },
+            {
+                "id": "moreSettings",
+                "value": "Mais Definições"
+            }
+        ]
+    }, {
+        "_id": "gTLjDuueYvJQR3pJH",
+        "lang": "pt",
+        "componentN": "generalSettingsTopContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "guideName",
+                "value": "Nome"
+            },
+            {
+                "id": "description",
+                "value": "Descrição"
+            },
+            {
+                "id": "tutorialNameInput",
+                "value": "Gestão de Conteudo"
+            },
+            {
+                "id": "descriptionInput",
+                "value": "É um conjunto de processos e tecnologias que suportam a compilação, gestão e publicação de informação em qualquer forma ou meio"
+            },
+            {
+                "id": "guideNameTitle",
+                "value": "Dê um nome ao seu guia aqui."
+            },
+            {
+                "id": "descriptionTitle",
+                "value": "Escreva uma descrição breve que explica o conteudo do guia."
+            }
+        ]
+    }, {
+        "_id": "gnNeeNMaHJxCphYgt",
+        "lang": "pt",
+        "componentN": "bottomMenuRecordHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Controle a sua gravação."
+            },
+            {
+                "id": "message",
+                "value": "Este é o menu de gravação onde poderá pré-visualizar e gravar o seu guia."
+            }
+        ]
+    }, {
+        "_id": "gpBEo6epWGMyki6d4",
+        "lang": "pt",
+        "componentN": "quickEditLabel",
+        "toolN": "client",
+        "entries": [{
+            "id": "text",
+            "value": "Modo de edição rápido de passos"
+        }]
+    }, {
+        "_id": "h5zTDKpwhED6FhsGW",
+        "lang": "pt",
+        "componentN": "draftPublishBar",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "draftButton",
+                "value": "Rascunho"
+            },
+            {
+                "id": "publishButton",
+                "value": "Publicado"
+            }
+        ]
+    }, {
+        "_id": "hPsLvxum7iM3fSKpd",
+        "lang": "en",
+        "componentN": "stepListEditTutorial",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "settings",
+                "value": "Settings"
+            },
+            {
+                "id": "languages",
+                "value": "Languages"
+            }
+        ]
+    }, {
+        "_id": "hpHgo2cj7gouFki7Q",
+        "lang": "en",
+        "componentN": "search",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "noResults",
+            "value": "There are no results that match your search"
+        }]
+    }, {
+        "_id": "i3d4sBgwH8uKCF5GM",
+        "lang": "en",
+        "componentN": "loadingGuideFeedback",
+        "toolN": "client",
+        "entries": [{
+            "id": "loading",
+            "value": "loading..."
+        }]
+    }, {
+        "_id": "isAz7m3t6xiMYasGy",
+        "lang": "pt",
+        "componentN": "editMultimediaLinkDesc",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "multimediaLinkInput",
+                "value": "Link Multimédia"
+            },
+            {
+                "id": "multimediaLinkSpan",
+                "value": "Enviar"
+            },
+            {
+                "id": "multimediaLinkDesc",
+                "value": "Descrição"
+            }
+        ]
+    }, {
+        "_id": "j4YFSRaLTL5DKJGp9",
+        "lang": "en",
+        "componentN": "generalSettingsMiddleContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "draftBtn",
+                "value": "Draft"
+            },
+            {
+                "id": "pubBtn",
+                "value": "Published"
+            }
+        ]
+    }, {
+        "_id": "jHiaZx4mBLegzc9Ec",
+        "lang": "en",
+        "toolN": "tutorial",
+        "componentN": "tools",
+        "entries": [{
+                "id": "Login",
+                "value": "Login"
+            },
+            {
+                "id": "Guides",
+                "value": "Guides"
+            }
+        ]
+    }, {
+        "_id": "juNNJCmzGBQMK8DjW",
+        "lang": "pt",
+        "componentN": "removeStepFeedback",
+        "toolN": "client",
+        "entries": [{
+                "id": "message",
+                "value": "Tem a certeza de que deseja eliminar este passo? <p><strong>Esta ação não poderá ser desfeita.</strong></p>"
+            },
+            {
+                "id": "cancel",
+                "value": "Cancelar"
+            },
+            {
+                "id": "delete",
+                "value": "Eliminar"
+            }
+        ]
+    }, {
+        "_id": "jwgrtt8K9d9HGqoL7",
+        "lang": "pt",
+        "componentN": "siteMapBtns",
+        "toolN": "siteMap",
+        "entries": [{
+                "id": "skipSiteMap",
+                "value": "Saltar"
+            },
+            {
+                "id": "stopSiteMap",
+                "value": "Não mostrar outra vez"
+            }
+        ]
+    }, {
+        "_id": "jzx2QfikczFWn5mzY",
+        "lang": "en",
+        "componentN": "recording",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "newGuide",
+                "value": "New Guide"
+            },
+            {
+                "id": "guideName",
+                "value": "Name"
+            },
+            {
+                "id": "description",
+                "value": "Description"
+            },
+            {
+                "id": "keywords",
+                "value": "Keywords"
+            },
+            {
+                "id": "tutorial",
+                "value": "Tutorial"
+            },
+            {
+                "id": "tooltip",
+                "value": "Tooltip"
+            },
+            {
+                "id": "guideNameTitle",
+                "value": "Name your guide here."
+            },
+            {
+                "id": "guideDescriptionTitle",
+                "value": "Write a brief description that defines the guide’s content."
+            },
+            {
+                "id": "keywordsTitle",
+                "value": "(Optional) You can add keywords or tags to group guides."
+            },
+            {
+                "id": "newGuideTitle",
+                "value": "Name your guide here."
+            },
+            {
+                "id": "descriptionTitle",
+                "value": "Write a brief description that defines the guide’s content."
+            },
+            {
+                "id": "categoryLabel",
+                "value": "Category"
+            },
+            {
+                "id": "categoryInfo",
+                "value": "Select here a category to organize your guides on Helppier widget. You can manage and add new categories on your backoffice dashboard"
+            },
+            {
+                "id": "reselectOptionsLabel",
+                "value": "Re-select options"
+            },
+            {
+                "id": "reselectOnSLabel",
+                "value": "Re-select on screen"
+            },
+            {
+                "id": "reselectMLabel",
+                "value": "Re-select manually"
+            },
+            {
+                "id": "reselectOnSInfo",
+                "value": "Modify an element by selecting a new one directly on the website."
+            },
+            {
+                "id": "reselectMInfo",
+                "value": "It is possible to use HTML selector to select specific elements on our web pages on which you want to add a guide step. This option allows a more precision when selecting your own website's elements. You can use the Web Inspector of your browser to take a look at the corresponding HTML selector."
+            }
+        ]
+    }, {
+        "_id": "kJduKa76n2fFewGGz",
+        "lang": "pt",
+        "componentN": "initialFailBehaviors",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "initialFBLabel",
+                "value": "Escolha o que acontece caso o guia não consiga iniciar:"
+            },
+            {
+                "id": "initialDoNothingLabel",
+                "value": "Parar reprodução do guia"
+            },
+            {
+                "id": "initialDoNothingInfo",
+                "value": "Se ocorrer um erro, o guia irá fechar e parar a reprodução."
+            },
+            {
+                "id": "initialMessageLabel",
+                "value": "Exibe uma mensagem de erro"
+            },
+            {
+                "id": "initialMessageInfo",
+                "value": "Pode apresentar uma mensagem customizada para informar os utilizadores quando um erro inesperado aconteceu ao carregar o guia.  Ela ajudará o utilizador a perceber se algo correu mal ou se o guia não conseguiu iniciar. Esta mensagem aparecerá no centro da página web onde o utilizador se encontra."
+            },
+            {
+                "id": "initialRefreshLabel",
+                "value": "Recarregar a página web"
+            },
+            {
+                "id": "initialRefreshInfo",
+                "value": "A página onde o utilizador tenta iniciar o guia será actualizada para que o guia tente iniciar novamente."
+            },
+            {
+                "id": "initialSpecificPageLabel",
+                "value": "Direcione o utilizador para uma página de início"
+            },
+            {
+                "id": "initialSpecificPageInfo",
+                "value": "Insira o URL da página para automaticamente saltar e o guia puder começar."
+            },
+            {
+                "id": "otherpartsFBLabel",
+                "value": "Escolha o que acontece caso algum passo não consiga iniciar:"
+            },
+            {
+                "id": "otherpartsDoNothingLabel",
+                "value": "Parar reprodução do guia"
+            },
+            {
+                "id": "otherpartsDoNothingInfo",
+                "value": "Se ocorrer um erro, o guia irá fechar e parar a reprodução."
+            },
+            {
+                "id": "otherpartsMessageLabel",
+                "value": "Exibe uma mensagem de erro"
+            },
+            {
+                "id": "otherpartsMessageInfo",
+                "value": "Pode apresentar uma mensagem customizada para informar os utilizadores quando um erro inesperado acontecer ao carregar o guia.  Ela ajudará o utilizador a entender se algo correr mal e o guia não conseguiu iniciar. Esta mensagem aparecerá no centro da página web onde o utilizador se encontra."
+            },
+            {
+                "id": "failBehaviorsAddNewMessage",
+                "value": "Criar nova mensagem"
+            },
+            {
+                "id": "initialStartOtherTutLabel",
+                "value": "Começar primeiro outro tutorial"
+            },
+            {
+                "id": "initialStartOtherTutInfo",
+                "value": "Esta opção permite escolher um novo tutorial para ser apresentado antes do tutorial atual, de forma a encaminhar o utilizador para um determinado local do seu site mais adequado para o início do tutorial. Selecione na lista abaixo um novo tutorial e o tutorial atual iniciará automaticamente após este novo tutorial."
+            }
+        ]
+    }, {
+        "_id": "mSNiXbdhaRgbk85At",
+        "lang": "de",
+        "componentN": "stepListSegmentation",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Klassifizierung und Klasse"
+            },
+            {
+                "id": "segmentationKey",
+                "value": "Klassifizierung"
+            },
+            {
+                "id": "segmentationKeyValue",
+                "value": "Klasse"
+            },
+            {
+                "id": "segmentationInput",
+                "value": "Segmentierung hinzufügen"
+            }
+        ]
+    }, {
+        "_id": "nDDrE8TZPB6g9iykw",
+        "lang": "en",
+        "componentN": "toolMenuTitle",
+        "toolN": "client",
+        "entries": [{
+                "id": "desk",
+                "value": "Customer Service"
+            },
+            {
+                "id": "login",
+                "value": "Login"
+            },
+            {
+                "id": "guides",
+                "value": "Guides"
+            }
+        ]
+    }, {
+        "_id": "nWkprnG2MuwDc3hb7",
+        "lang": "de",
+        "componentN": "editStepMiddleEdit",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "editTitlePlaceholder",
+                "value": "Hier Text eingeben"
+            },
+            {
+                "id": "fillElem",
+                "value": "Ausfüllen"
+            },
+            {
+                "id": "fillElemTitle",
+                "value": "Beispieltext einfügen"
+            },
+            {
+                "id": "fillElemPlaceholder",
+                "value": "Element ausfüllen"
+            },
+            {
+                "id": "dropdown",
+                "value": "Dropdown"
+            },
+            {
+                "id": "dropdownTitle",
+                "value": "Option zum Dropdown wählen."
+            },
+            {
+                "id": "dropbtn",
+                "value": "Auswählen"
+            },
+            {
+                "id": "editTitleDescPlaceholder",
+                "value": "Beschreibung"
+            }
+        ]
+    }, {
+        "_id": "oXtRHPjnqGSEtxewK",
+        "lang": "pt",
+        "componentN": "courses",
+        "toolN": "training",
+        "entries": [{
+                "id": "newCourse",
+                "value": "Novo Curso"
+            },
+            {
+                "id": "courseName",
+                "value": "Nome do Curso"
+            },
+            {
+                "id": "courseDescription",
+                "value": "Descrição do Curso"
+            },
+            {
+                "id": "createCourse",
+                "value": "Criar Curso"
+            },
+            {
+                "id": "courseSettings",
+                "value": "Definições do Curso"
+            },
+            {
+                "id": "aboutCourse",
+                "value": "Acerca do Curso"
+            },
+            {
+                "id": "video",
+                "value": "Video"
+            },
+            {
+                "id": "guide",
+                "value": "Guia Interativo"
+            },
+            {
+                "id": "files",
+                "value": "Ficheiros"
+            },
+            {
+                "id": "quiz",
+                "value": "Questionário"
+            },
+            {
+                "id": "reading",
+                "value": "Documento PDF"
+            },
+            {
+                "id": "noCoursesYet",
+                "value": "Não há cursos disponíveis neste momento"
+            },
+            {
+                "id": "cantLoadCourses",
+                "value": "Problema a carregar cursos"
+            },
+            {
+                "id": "noContentYetTitle",
+                "value": "Não encontramos nenhum conteúdo"
+            },
+            {
+                "id": "noContentYetText",
+                "value": "Este módulo está atualmente vazio."
+            },
+            {
+                "id": "cantLoadModule",
+                "value": "Erro ao carregar este módulo."
+            },
+            {
+                "id": "oops",
+                "value": "Oops..."
+            },
+            {
+                "id": "pleaseTryAgain",
+                "value": "Por favor tente novamente mais tarde."
+            },
+            {
+                "id": "dialogPublish",
+                "value": "Tem a certeza que deseja publicar?"
+            },
+            {
+                "id": "dialogRemove",
+                "value": "Tem a certeza que deseja remover?"
+            }
+        ]
+    }, {
+        "_id": "oaGZ6MjsAmqWyPGAr",
+        "lang": "pt",
+        "componentN": "selectorOptions",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "useTextLabel",
+                "value": "Selecção de Elementos"
+            },
+            {
+                "id": "useTextInfo",
+                "value": "Permite identificar este elemento no seu site ou aplicação web através de texto . Esta opção irá alterar e melhorar a forma como o Helppier deteta o elemento certo, assegurando a correcta visualização do guia."
+            },
+            {
+                "id": "useTextInput",
+                "value": "Identificar Elemento por Texto"
+            },
+            {
+                "id": "identifyElement",
+                "value": "Identificar elementos da página"
+            },
+            {
+                "id": "usingTextInput",
+                "value": "Através de texto"
+            },
+            {
+                "id": "userTimer",
+                "value": "Máx. Tempo de carregamento da página (seg)"
+            }
+        ]
+    }, {
+        "_id": "oapW5EAFrT38j6eW9",
+        "lang": "pt",
+        "componentN": "topInteractionSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Selecione os elementos a activar"
+            },
+            {
+                "id": "overlayBtn",
+                "value": "Ecrã de Overlay"
+            },
+            {
+                "id": "feedbackBtn",
+                "value": "Formulário de Comentários"
+            },
+            {
+                "id": "interactionSettings",
+                "value": "Definições de interação"
+            },
+            {
+                "id": "guideSettingsTitle",
+                "value": "Use a overlay para escurecer o fundo da página e realçar apenas um passo. O formulário de feedback permite ver o que os vossos utilizadores pensam dos guias criados."
+            },
+            {
+                "id": "stepIndicatorBtn",
+                "value": "Exibir Número do Passo"
+            }
+        ]
+    }, {
+        "_id": "pGEZXrrDCpDbbA49L",
+        "lang": "pt",
+        "componentN": "editStepMiddleEdit",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "editTitlePlaceholder",
+                "value": "Insira titulo aqui"
+            },
+            {
+                "id": "fillElem",
+                "value": "Escrita Automatica"
+            },
+            {
+                "id": "fillElemTitle",
+                "value": "Preenche automaticamente o elemento da página com texto exemplo."
+            },
+            {
+                "id": "fillElemPlaceholder",
+                "value": "Preencher automaticamente o elemento"
+            },
+            {
+                "id": "dropdown",
+                "value": "Dropdown"
+            },
+            {
+                "id": "dropdownTitle",
+                "value": "Escolha a opção para o Select da página."
+            },
+            {
+                "id": "dropbtn",
+                "value": "Selecione"
+            },
+            {
+                "id": "editTitleDescPlaceholder",
+                "value": "Descrição"
+            },
+            {
+                "id": "fillInActionTitle",
+                "value": "Pode simular inserção de texto em caixas de texto. Adicione a descrição que será mostrada dentro da caixa de texto."
+            },
+            {
+                "id": "dropDownActionTitle",
+                "value": "Se o elemento tem uma lista, selecione aqui a option para afixar a bubble."
+            }
+        ]
+    }, {
+        "_id": "pJGWawtqSJiHxcHR7",
+        "lang": "en",
+        "componentN": "angryFaceMessage",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "first",
+                "value": "Inappropriate message"
+            },
+            {
+                "id": "second",
+                "value": "Not working well"
+            },
+            {
+                "id": "third",
+                "value": "Problem not solved"
+            }
+        ]
+    }, {
+        "_id": "pqx4pTwDWRcMa5sk5",
+        "lang": "pt",
+        "componentN": "generalSettingsMiddleContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "draftBtn",
+                "value": "Rascunho"
+            },
+            {
+                "id": "pubBtn",
+                "value": "Publicado"
+            }
+        ]
+    }, {
+        "_id": "qnHxocmv4uPRGSr4m",
+        "lang": "pt",
+        "componentN": "editStepMiddleActionv2",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "attachlabelv2",
+                "value": "Passo a passo."
+            },
+            {
+                "id": "attachinfov2",
+                "value": "Usado para informar ou descrever um elemento na página.  Pode ser usado passo a passo ou para mostrar exemplos em caixas de texto."
+            },
+            {
+                "id": "clicklabelv2",
+                "value": "Clicar no elemento."
+            },
+            {
+                "id": "clickinfov2",
+                "value": "Usado para clicar num elemento que irá mudar a página, continuando o guia."
+            },
+            {
+                "id": "mouseoverlabelv2",
+                "value": "Mouseover."
+            },
+            {
+                "id": "mouseoverinfov2",
+                "value": "Usado em menus ou elementos mouseover, iniciando a ação que ao passar o rato iria iniciar."
+            },
+            {
+                "id": "dropdownmenuv2",
+                "value": "Menu dropdown."
+            },
+            {
+                "id": "dropdownmenuinfov2",
+                "value": "Usado para escolher uma das opções numa lista."
+            },
+            {
+                "id": "autotypingv2",
+                "value": "Escrita automática."
+            },
+            {
+                "id": "popupv2",
+                "value": "Mensagens Popup."
+            },
+            {
+                "id": "popupinfov2",
+                "value": "Usado para mostrar uma mensagem no centro do ecrã. Como uma mensagem de boas vindas ou uma informação genérica."
+            }
+        ]
+    }, {
+        "_id": "rHXZ6TXJhxYTYXSSn",
+        "lang": "en",
+        "componentN": "selectorOptions",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "useTextLabel",
+                "value": "Elements Selection"
+            },
+            {
+                "id": "useTextInfo",
+                "value": "It allows to identify by text this element on your website or web app. This option will change and improve the way Helppier detects the right element, assuring a correct visualization of the guide."
+            },
+            {
+                "id": "useTextInput",
+                "value": "Identify Element by Text"
+            },
+            {
+                "id": "identifyElement",
+                "value": "Identify a page element"
+            },
+            {
+                "id": "usingTextInput",
+                "value": "Using Text"
+            },
+            {
+                "id": "userTimer",
+                "value": "Max. page load time (sec)"
+            }
+        ]
+    }, {
+        "_id": "rMpSToZenyYspFehy",
+        "lang": "de",
+        "componentN": "generalSettingsTopContent",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "guideName",
+                "value": "Name"
+            },
+            {
+                "id": "description",
+                "value": "Beschreibung"
+            },
+            {
+                "id": "tutorialNameInput",
+                "value": "Inhalt verwalten"
+            },
+            {
+                "id": "discriptionInput",
+                "value": "Ist eine Reihe von Prozessen und Technologien, die die Erfassung, Verwaltung und Veröffentlichung von Informationen in jeder Form oder Medium unterstützen."
+            }
+        ]
+    }, {
+        "_id": "rYCbETcwLckuXBSE8",
+        "lang": "es",
+        "componentN": "inLoveFeedback",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "title",
+                "value": "¿Cómo podemos ser de mejor servicio?"
+            },
+            {
+                "id": "placeholder",
+                "value": "Introduzca su idea"
+            }
+        ]
+    }, {
+        "_id": "rw6GigpvGnkBM5sxK",
+        "lang": "pt",
+        "componentN": "courseProgram",
+        "toolN": "training",
+        "entries": [{
+                "id": "newModule",
+                "value": "Novo Módulo"
+            },
+            {
+                "id": "editModule",
+                "value": "Editar Módulo"
+            },
+            {
+                "id": "moduleName",
+                "value": "Nome do Módulo"
+            },
+            {
+                "id": "createModule",
+                "value": "Criar Módulo"
+            },
+            {
+                "id": "addContent",
+                "value": "Adicionar Conteúdo"
+            },
+            {
+                "id": "selectContent",
+                "value": "Selecionar Conteúdo"
+            },
+            {
+                "id": "changeContentType",
+                "value": "Alterar tipo de Conteúdo"
+            },
+            {
+                "id": "selectGuide",
+                "value": "Selecione um Guia"
+            },
+            {
+                "id": "saveContent",
+                "value": "Gravar Conteúdo"
+            }
+        ]
+    }, {
+        "_id": "smTpP4su4wPSMcXdz",
+        "lang": "en",
+        "componentN": "topDeviceSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Set in which devices to show"
+            },
+            {
+                "id": "desktopBtn",
+                "value": "Desktop"
+            },
+            {
+                "id": "mobileTBtn",
+                "value": "Tablet"
+            },
+            {
+                "id": "mobileSBtn",
+                "value": "Smartphone"
+            },
+            {
+                "id": "guideSettingsTitle",
+                "value": "Select here on which devices you want to display your guides."
+            }
+        ]
+    }, {
+        "_id": "spnTsHXdMAuaEr8ay",
+        "lang": "en",
+        "componentN": "newGuideHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Let’s get started!"
+            },
+            {
+                "id": "message",
+                "value": "Click here to create your first guide and start changing your user's lifes.."
+            }
+        ]
+    }, {
+        "_id": "sqXgBZzGhrBXQouQ7",
+        "lang": "en",
+        "componentN": "editStepMiddleActionv2",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "attachlabelv2",
+                "value": "Walkthrough step."
+            },
+            {
+                "id": "attachinfov2",
+                "value": "Used when you want to give instructions and an explanation exactly on a page element.  You can use this to create steps in a tour through a page or to teach how to fill forms."
+            },
+            {
+                "id": "clicklabelv2",
+                "value": "Click on element."
+            },
+            {
+                "id": "clickinfov2",
+                "value": "Used to click on a page element and redirect users to another page. The guide will continue displaying on the page you redirected."
+            },
+            {
+                "id": "mouseoverlabelv2",
+                "value": "Mouseover."
+            },
+            {
+                "id": "mouseoverinfov2",
+                "value": "Allow to attach a tutorial step on a hover menu or on an element that is activated when the user 'hovers' the pointer over its trigger."
+            },
+            {
+                "id": "dropdownmenuv2",
+                "value": "Dropdown Menu."
+            },
+            {
+                "id": "dropdownmenuinfov2",
+                "value": "Allow to choose one element from a list box to attach a walkthrough step."
+            },
+            {
+                "id": "autotypingv2",
+                "value": "Automatic Typing."
+            },
+            {
+                "id": "popupv2",
+                "value": "Popup messages."
+            },
+            {
+                "id": "popupinfov2",
+                "value": "Used to show a quick message to the user in the center of the screen. You might onboard new users or give generic information about your business."
+            }
+        ]
+    }, {
+        "_id": "tC7hed5osHSC935fd",
+        "lang": "en",
+        "componentN": "onHide",
+        "toolN": "recording",
+        "entries": [{
+                "id": "name",
+                "value": "On Hide"
+            },
+            {
+                "id": "title",
+                "value": "This option will move the user to the next step when the selected element hides. The button NEXT will never show up in this step while the button PREVIOUS won't show up the following step."
+            }
+        ]
+    }, {
+        "_id": "tFwmuRkkdxwx8WWz9",
+        "lang": "en",
+        "componentN": "draftPublishBar",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "draftButton",
+                "value": "Draft"
+            },
+            {
+                "id": "publishButton",
+                "value": "Published"
+            }
+        ]
+    }, {
+        "_id": "tTMppSgkmw8obqE7a",
+        "lang": "pt",
+        "componentN": "saveBeforeExit",
+        "toolN": "client",
+        "entries": [{
+                "id": "message",
+                "value": "Deseja <strong>gravar as alterações</strong> antes de sair?"
+            },
+            {
+                "id": "exit",
+                "value": "Sair"
+            },
+            {
+                "id": "save",
+                "value": "Gravar"
+            }
+        ]
+    }, {
+        "_id": "typhLWCqFe5pWaMFr",
+        "lang": "en",
+        "toolN": "FeedbackError",
+        "componentN": "feedbackError",
+        "entries": [{
+                "id": "emailPassword",
+                "value": "Enter your email and password!"
+            },
+            {
+                "id": "email",
+                "value": "Enter your email"
+            },
+            {
+                "id": "password",
+                "value": "Enter your password!"
+            },
+            {
+                "id": "recording",
+                "value": "Tutorial name must be set!"
+            },
+            {
+                "id": "emotePanel",
+                "value": "Your message needs to have only alphanumeric codes!"
+            },
+            {
+                "id": "segmentation",
+                "value": "Upgrade your subscription to use user targeting!"
+            }
+        ]
+    }, {
+        "_id": "u7QXEwWM5itS8Hb7H",
+        "lang": "en",
+        "componentN": "autoPlay",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "autoPlayLabel",
+                "value": "AutoPlay Behavior"
+            },
+            {
+                "id": "onloadpageCheckbox",
+                "value": "Get on Page"
+            },
+            {
+                "id": "onunloadpageCheckbox",
+                "value": "Out of Page (Coming Soon!)"
+            },
+            {
+                "id": "timerCheckbox",
+                "value": "Timer"
+            },
+            {
+                "id": "timerValue",
+                "value": "Seconds"
+            },
+            {
+                "id": "autoPlayTitle",
+                "value": "Onboarding (set messages to appear to a first time visitor); Unload Messages (set messages to appear when someone is about to leave the website); Timer (set messages to appear after a certain time);"
+            }
+        ]
+    }, {
+        "_id": "uDCXtpZSbaa2GaJPw",
+        "lang": "pt",
+        "componentN": "deviceSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Definições dos dispositivos"
+            },
+            {
+                "id": "message",
+                "value": "Poderá escolher em que dispositivos quer mostrar os seus guias (Computador, Tablet ou Smartphone)."
+            }
+        ]
+    }, {
+        "_id": "ugrr9GzwGDiMHMk4d",
+        "lang": "pt",
+        "componentN": "topDeviceSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Escolha em que dispositivos mostar"
+            },
+            {
+                "id": "desktopBtn",
+                "value": "Computador"
+            },
+            {
+                "id": "mobileTBtn",
+                "value": "Tablet"
+            },
+            {
+                "id": "mobileSBtn",
+                "value": "Smartphone"
+            },
+            {
+                "id": "guideSettingsTitle",
+                "value": "Escolha aqui onde deseja mostrar os seus guias"
+            }
+        ]
+    }, {
+        "_id": "unPRS7mkidgSAmnFf",
+        "lang": "en",
+        "componentN": "toggleHints",
+        "toolN": "hints",
+        "entries": [{
+                "id": "dontShowThis",
+                "value": "Don't show this"
+            },
+            {
+                "id": "showHints",
+                "value": "Show Interface hints"
+            },
+            {
+                "id": "title",
+                "value": "Here you can enable or disable all the hints."
+            }
+        ]
+    }, {
+        "_id": "vPytxeyF9KRhLpuXs",
+        "lang": "de",
+        "componentN": "tutorialListNewTutorial",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "newGuide",
+            "value": "Neuer Guide"
+        }]
+    }, {
+        "_id": "vv5nwdXa3jLYt2Z77",
+        "lang": "en",
+        "componentN": "quickEditLabel",
+        "toolN": "client",
+        "entries": [{
+            "id": "text",
+            "value": "Quick edit step mode"
+        }]
+    }, {
+        "_id": "w83CNExCMhuWTBeKh",
+        "lang": "en",
+        "componentN": "publishGuideHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Publish Guide!"
+            },
+            {
+                "id": "message",
+                "value": "If you want to publish your guide and and make it public for users you need to associate it to a specific webpage."
+            }
+        ]
+    }, {
+        "_id": "wAdwPq2Jhx3Sp2k6F",
+        "lang": "en",
+        "componentN": "editStepMiddleEdit",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "editTitlePlaceholder",
+                "value": "Type here..."
+            },
+            {
+                "id": "fillElem",
+                "value": "Automatic typing"
+            },
+            {
+                "id": "fillElemTitle",
+                "value": "Fill in element with example text"
+            },
+            {
+                "id": "fillElemPlaceholder",
+                "value": "Automatic type a sample text"
+            },
+            {
+                "id": "dropdown",
+                "value": "Dropdown"
+            },
+            {
+                "id": "dropdownTitle",
+                "value": "If the element has a drop down menu, select here the option to attach the bubble."
+            },
+            {
+                "id": "dropbtn",
+                "value": "Select"
+            },
+            {
+                "id": "editTitleDescPlaceholder",
+                "value": "Description"
+            },
+            {
+                "id": "fillInActionTitle",
+                "value": "You can simulate text insertion into text fields. Add the description that will be shown inside the text field."
+            },
+            {
+                "id": "dropDownActionTitle",
+                "value": "If the element has a drop down menu, select here the option to attach the bubble."
+            }
+        ]
+    }, {
+        "_id": "wFw2QR3mBKnzQgv99",
+        "lang": "de",
+        "componentN": "stepTitle",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "stepTitlePlaceholder",
+            "value": "Hier Text eingeben"
+        }]
+    }, {
+        "_id": "wJMhozDCbZSNEKDEK",
+        "lang": "en",
+        "componentN": "optionalPrevious",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "optionalPreviousLabel",
+                "value": "Select control options"
+            },
+            {
+                "id": "optionalPreviousBtn",
+                "value": "Previous button"
+            },
+            {
+                "id": "optionalPreviousTitle",
+                "value": "Enable or disable the “Previous Button” so users can go back and forth at any step of your guide."
+            },
+            {
+                "id": "jumptoLabel",
+                "value": "Jump to"
+            },
+            {
+                "id": "skipableLabel",
+                "value": "Auto Skip Step"
+            }
+        ]
+    }, {
+        "_id": "wbDC9sEFWSS7XZnJ3",
+        "lang": "de",
+        "componentN": "topDeviceSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Auswählen in welchen Geräten es angezeigt wird."
+            },
+            {
+                "id": "desktopBtn",
+                "value": "Desktop"
+            },
+            {
+                "id": "mobileTBtn",
+                "value": "Tablet"
+            },
+            {
+                "id": "mobileSBtn",
+                "value": "Smartphone"
+            }
+        ]
+    }, {
+        "_id": "xDD4v8R2GWwXwAM2E",
+        "lang": "en",
+        "componentN": "editStepClickButton",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "click",
+                "value": "Click"
+            },
+            {
+                "id": "mouseOver",
+                "value": "MouseOver"
+            }
+        ]
+    }, {
+        "_id": "xmQ2zEQgmynAMw9ex",
+        "lang": "pt",
+        "componentN": "toolMenuTitle",
+        "toolN": "client",
+        "entries": [{
+                "id": "desk",
+                "value": "Apoio ao Cliente"
+            },
+            {
+                "id": "login",
+                "value": "Login"
+            },
+            {
+                "id": "guides",
+                "value": "Guias"
+            }
+        ]
+    }, {
+        "_id": "y2xJqZtoAijF9TYzH",
+        "lang": "de",
+        "componentN": "topPageSettings",
+        "toolN": "tutorial",
+        "entries": [{
+                "id": "titleLabel",
+                "value": "Einstellen, wo es in der Seite eingezeigt wird"
+            },
+            {
+                "id": "selectPageBtn",
+                "value": "Seite auswählen"
+            },
+            {
+                "id": "createPageBtn",
+                "value": "Neue Seite erstellen"
+            },
+            {
+                "id": "pageNameInput",
+                "value": "Name der Seite"
+            },
+            {
+                "id": "pageUrlInput",
+                "value": "Webseite-URL"
+            }
+        ]
+    }, {
+        "_id": "yQcfaMH5hMPQSYHoH",
+        "lang": "en",
+        "componentN": "newPageHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Create a page!"
+            },
+            {
+                "id": "message",
+                "value": "Each guide created has to be attached to a specific page. Here you can select a page or create a new one by filling the boxes required (page URL and name)."
+            }
+        ]
+    }, {
+        "_id": "yefZfeh2e3yurTpSn",
+        "lang": "en",
+        "componentN": "quickEditFeedbackAction",
+        "toolN": "client",
+        "entries": [{
+            "id": "message",
+            "value": "This step has associated an action. If you delete it, this tutorial may be damaged. Are you sure you want to delete this step?"
+        }]
+    }, {
+        "_id": "yxAnZ64WKjBjEDvfd",
+        "lang": "pt",
+        "componentN": "search",
+        "toolN": "tutorial",
+        "entries": [{
+            "id": "noResults",
+            "value": "Nenhum guia encontrado para a sua pesquisa"
+        }]
+    }, {
+        "_id": "z6hyJmAMp23tTWpZQ",
+        "lang": "pt",
+        "componentN": "moreSettingsHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Outras definições"
+            },
+            {
+                "id": "message",
+                "value": "Poderá definir os seus guias para diferentes tipos de visitantes e personalizar as dimenções e valores de qualquer conjunto de condições."
+            }
+        ]
+    }, {
+        "_id": "zNEh4G28uEpMAqh8o",
+        "lang": "en",
+        "componentN": "siteMapBtns",
+        "toolN": "siteMap",
+        "entries": [{
+                "id": "skipSiteMap",
+                "value": "Skip"
+            },
+            {
+                "id": "stopSiteMap",
+                "value": "Do not show it again"
+            }
+        ]
+    }, {
+        "_id": "zTYgxaaQoKyE43h8k",
+        "lang": "en",
+        "componentN": "quickEdit",
+        "toolN": "client",
+        "entries": [{
+                "id": "next",
+                "value": "Next step"
+            },
+            {
+                "id": "previous",
+                "value": "Step back"
+            }
+        ]
+    }, {
+        "_id": "zstn6jywH6iFAhCjv",
+        "lang": "pt",
+        "componentN": "playGuideHint",
+        "toolN": "hints",
+        "entries": [{
+                "id": "title",
+                "value": "Exibir guias"
+            },
+            {
+                "id": "message",
+                "value": "Aqui poderá ver os guias que criou. Escolha o guia que pretende exibir ao clicar nele."
+            }
+        ]
+    }
+]
