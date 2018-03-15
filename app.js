@@ -4,7 +4,7 @@ const mongoClient = require('mongodb').MongoClient;
 const async = require('async');
 
 const url = 'mongodb://localhost:27017';
-const key = '9c257e4bf93e4daf956f49f4719f98ff';
+const key = '';
 const fromLang = 'pt';
 
 const regex = new RegExp("\<t class\=\'notranslate\'\>.*\<\/t\>");
