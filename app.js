@@ -8,7 +8,7 @@ const mongoClient = require('mongodb').MongoClient;
 const async = require('async');
 
 const url = 'mongodb://localhost:27017';
-const key = '14fe39b28b79421b847f527e319db16e';
+const key = '';
 const fromLang = process.argv[2];
 const toLangs = [];
 
